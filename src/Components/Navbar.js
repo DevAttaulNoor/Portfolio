@@ -30,7 +30,7 @@ function BasicExample() {
         setActiveLink(value);
     }
 
-    return (
+    return(
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
