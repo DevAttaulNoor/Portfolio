@@ -1,9 +1,10 @@
-import React from 'react'
-import Navbar from './Components/Navbar';
-import Banner from './Components/Banner';
 import './App.css';
 import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import React from 'react'
+import Navbar from './Components/Navbar';
+import Banner from './Components/Banner';
 
 function App() {
   return (

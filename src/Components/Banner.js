@@ -31,17 +31,21 @@ export const Banner = () => {
         if (isDeleting) {
             setDelta(prevDelta => prevDelta / 2);
         }
-
+        
         if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setIndex(prevIndex => prevIndex - 1);
             setDelta(period);
-        } else if (isDeleting && updatedText === '') {
+        } 
+        
+        else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setIndex(1);
             setDelta(500);
-        } else {
+        } 
+        
+        else {
             setIndex(prevIndex => prevIndex + 1);
         }
     }
