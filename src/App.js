@@ -8,7 +8,8 @@ import Navbar from './Components/Navbar';
 import Banner from './Components/Banner';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
-import ProjectCard from './Components/ProjectCard';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      <ProjectCard />
+      <Contact />
+      <Footer />
     </div>
   );
 }
