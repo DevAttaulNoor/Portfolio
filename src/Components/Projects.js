@@ -4,6 +4,7 @@ import TrackVisibility from 'react-on-screen';
 import projImg1 from "../Assets/img/project-img1.png";
 import projImg2 from "../Assets/img/project-img2.png";
 import projImg3 from "../Assets/img/project-img3.png";
+import colorSharp from "../Assets/img/color-sharp.png";
 import colorSharp2 from "../Assets/img/color-sharp2.png";
 
 export const Projects = () => {
@@ -91,7 +92,8 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
+            {/* <img className="background-image-left" src={colorSharp} alt="Image" />
+            <img className="background-image-right" src={colorSharp2} alt="Image" /> */}
         </section>
     )
 }

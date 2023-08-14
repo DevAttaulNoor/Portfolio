@@ -2,9 +2,8 @@ import Carousel from 'react-multi-carousel';
 import meter1 from "../Assets/img/meter1.svg";
 import meter2 from "../Assets/img/meter2.svg";
 import meter3 from "../Assets/img/meter3.svg";
-import arrow1 from "../Assets/img/arrow1.svg";
-import arrow2 from "../Assets/img/arrow2.svg";
-import colorSharp from "../Assets/img/color-sharp.png"
+// import arrow1 from "../Assets/img/arrow1.svg";
+// import arrow2 from "../Assets/img/arrow2.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -57,7 +56,6 @@ export const Skills = () => {
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
         </section>
     )
 }
