@@ -1,4 +1,6 @@
+import CircularProgressBar from "./CircularProgressBar";
 import Carousel from 'react-multi-carousel';
+
 import meter1 from "../Assets/img/meter1.svg";
 import meter2 from "../Assets/img/meter2.svg";
 import meter3 from "../Assets/img/meter3.svg";
@@ -26,6 +28,8 @@ export const Skills = () => {
         }
     };
 
+    const percentage = 100;
+
     return (
         <section className="skill" id="skills">
             <div className="container">
@@ -36,6 +40,27 @@ export const Skills = () => {
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
+                                    <CircularProgressBar givenPer={80} />
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div className="item">
+                                    <CircularProgressBar givenPer={80} />
+                                    <h5>Web Designing</h5>
+                                </div>
+                                <div className="item">
+                                    <CircularProgressBar givenPer={70} />
+                                    <h5>HTML</h5>
+                                </div>
+                                <div className="item">
+                                    <CircularProgressBar givenPer={75} />
+                                    <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <CircularProgressBar givenPer={65} />
+                                    <h5>JavaScript</h5>
+                                </div>
+
+                                {/* <div className="item">
                                     <img src={meter1} alt="Image" />
                                     <h5>Web Development</h5>
                                 </div>
@@ -50,7 +75,7 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
                                     <h5>Web Designing</h5>
-                                </div>
+                                </div> */}
                             </Carousel>
                         </div>
                     </div>
