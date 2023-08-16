@@ -39,7 +39,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
                             </div>
                         </form>
                     </Col>
-                </Row>
+                </Row> 
             </div>
         </Col>
     )

@@ -350,13 +350,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-.col-xl-7 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /**............Skills Component............*/
 .skill {
   position: relative;
