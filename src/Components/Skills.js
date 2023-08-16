@@ -28,8 +28,6 @@ export const Skills = () => {
         }
     };
 
-    const percentage = 100;
-
     return (
         <section className="skill" id="skills">
             <div className="container">
