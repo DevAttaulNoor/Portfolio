@@ -436,6 +436,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px !important;
 } */
 
+/**............Circular Progress Bar Component............*/
+#circleprogressbar{
+  width: 100;
+  position: relative;
+}
+
+/* #circleprogressbar svg{
+  height: 50%;
+} */
+
+#circleprogressbar #percentage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
 
 /**............Projects Component............*/
 .project {

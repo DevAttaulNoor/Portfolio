@@ -11,12 +11,12 @@ function CircularProgressBar({ givenPer }) {
         }, 50);
     }, [percentage, givenPer]);
 
-    const radius = 40;
+    const radius = 20;
     const circumference = 2 * Math.PI * radius;
     const offset = circumference - (percentage / 100) * circumference;
 
     return (
-        <div style={{ width: 100, position: 'relative' }} className='circleprogressbar'>
+        <div id='circleprogressbar'>
             <svg viewBox="0 0 100 100">
                 <linearGradient id="progress-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stopColor="rgba(170, 54, 124, 0.5)" />
@@ -28,15 +28,13 @@ function CircularProgressBar({ givenPer }) {
                     r={radius}
                     fill="none"
                     stroke={`url(#progress-gradient)`}
-                    strokeWidth="10"
+                    strokeWidth="6"
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
                     strokeLinecap="round"
                 />
             </svg>
-            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-                {percentage}%
-            </div>
+            <div id='percentage'> {percentage}% </div>
         </div>
     );
 }
