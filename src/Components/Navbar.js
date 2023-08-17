@@ -41,9 +41,9 @@ function BasicExample() {
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>
-                            <a href="#"> <img src={navIcon1} alt="" /> </a>
-                            <a href="#"> <img src={navIcon2} alt="" /> </a>
-                            <a href="#"> <img src={navIcon3} alt="" /> </a>
+                            <a href="https://www.linkedin.com/in/atta-ul-noor-2aa7a1236/" target="_blank"> <img src={navIcon1} alt="" /> </a>
+                            <a href="https://www.facebook.com/AttaulNoor.2001/" target="_blank"> <img src={navIcon2} alt="" /> </a>
+                            <a href="https://github.com/DevAttaulNoor" target="_blank"> <img src={navIcon3} alt="" /> </a>
                         </div>
                         {/* <button className="vvd"> <span>Lets Connect</span> </button> */}
                     </span>
