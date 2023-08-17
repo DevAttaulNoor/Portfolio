@@ -1,6 +1,5 @@
 import CircularProgressBar from "./CircularProgressBar";
 import Carousel from 'react-multi-carousel';
-
 import meter1 from "../Assets/img/meter1.svg";
 import meter2 from "../Assets/img/meter2.svg";
 import meter3 from "../Assets/img/meter3.svg";
