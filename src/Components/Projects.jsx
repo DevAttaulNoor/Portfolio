@@ -4,41 +4,44 @@ import TrackVisibility from 'react-on-screen';
 import projImg1 from "../Assets/img/project-img1.png";
 import projImg2 from "../Assets/img/project-img2.png";
 import projImg3 from "../Assets/img/project-img3.png";
-import colorSharp from "../Assets/img/color-sharp.png";
-import colorSharp2 from "../Assets/img/color-sharp2.png";
 
 export const Projects = () => {
+    const smallprojects = [
+        {
+            title: "Calculator",
+            description: "Design & Development",
+            imgUrl: projImg1,
+        },
+        {
+            title: "Weather Forecaster",
+            description: "Design & Development",
+            imgUrl: projImg2,
+        },
+        {
+            title: "Personal Portfolio",
+            description: "Design & Development",
+            imgUrl: projImg3,
+        },
+    ];
 
-    const projects = [
+    const mediumprojects = [
         {
-            title: "Business Startup",
+            title: "Shipping Website",
             description: "Design & Development",
             imgUrl: projImg1,
         },
         {
-            title: "Business Startup",
+            title: "Ecommerce",
             description: "Design & Development",
             imgUrl: projImg2,
         },
+    ];
+
+    const largeprojects = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
-        {
-            title: "Business Startup",
+            title: "Facebook Clone",
             description: "Design & Development",
             imgUrl: projImg1,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
         },
     ];
 
@@ -51,24 +54,24 @@ export const Projects = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Projects</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>Explore my portfolio to see a showcase of my work. From e-commerce platforms to interactive web applications, each project reflects my commitment to quality and innovation.</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>
-                                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                                <Nav.Link eventKey="first">Small</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                                <Nav.Link eventKey="second">Medium</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                                                <Nav.Link eventKey="third">Large</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                             <Tab.Pane eventKey="first">
                                                 <Row>
                                                     {
-                                                        projects.map((project, index) => {
+                                                        smallprojects.map((project, index) => {
                                                             return (
                                                                 <ProjectCard
                                                                     key={index}
@@ -79,11 +82,35 @@ export const Projects = () => {
                                                     }
                                                 </Row>
                                             </Tab.Pane>
-                                            <Tab.Pane eventKey="section">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+
+                                            <Tab.Pane eventKey="second">
+                                                <Row>
+                                                    {
+                                                        mediumprojects.map((project, index) => {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
                                             </Tab.Pane>
+
                                             <Tab.Pane eventKey="third">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                                <Row>
+                                                    {
+                                                        largeprojects.map((project, index) => {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     </Tab.Container>
@@ -92,8 +119,6 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* <img className="background-image-left" src={colorSharp} alt="Image" />
-            <img className="background-image-right" src={colorSharp2} alt="Image" /> */}
         </section>
     )
 }

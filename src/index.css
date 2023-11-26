@@ -128,12 +128,12 @@ nav.navbar.scrolled {
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 16px;
     font-weight: 400;
-    color: var(--white-color);
     letter-spacing: 0.8px;
     padding: 0 20px;
-    font-size: 18px;
     opacity: 0.5;
+    color: var(--white-color);
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -283,7 +283,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /**............Banner Component............*/
 .banner {
-    padding: 200px 0 100px 0;
+    padding: 150px 0 100px 0;
     background-image: url('./Assets/img/banner-bg.png');
     background-position: top center;
     background-size: cover;
@@ -312,7 +312,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner p {
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
@@ -377,9 +377,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-bx {
     background: #151515;
-    border-radius: 64px;
+    border-radius: 60px;
     text-align: center;
-    padding: 80px 20px;
+    padding: 40px 20px;
 }
 
 .skill h2 {
@@ -389,7 +389,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill p {
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 15px 0 70px 0;
@@ -436,7 +436,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project p {
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px auto 30px auto;
@@ -556,20 +556,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 15px;
     letter-spacing: 0.8px;
 }
-
-/* .background-image-right {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -5;
-}
-
-.background-image-left {
-  top: -100px;
-  position: absolute;
-  width: 100%;
-  z-index: -5;
-} */
 
 /**............Contact Component............*/
 .contact {

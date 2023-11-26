@@ -12,14 +12,6 @@ export const Banner = () => {
     const toRotate = ["Web Developer", "Web Designer"];
     const period = 2000;
 
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta);
-
-        return () => { clearInterval(ticker) };
-    }, [text])
-
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
@@ -30,24 +22,32 @@ export const Banner = () => {
         if (isDeleting) {
             setDelta(prevDelta => prevDelta / 2);
         }
-        
+
         if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setIndex(prevIndex => prevIndex - 1);
             setDelta(period);
-        } 
-        
+        }
+
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setIndex(1);
             setDelta(500);
-        } 
-        
+        }
+
         else {
             setIndex(prevIndex => prevIndex + 1);
         }
     }
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+
+        return () => { clearInterval(ticker) };
+    }, [text])
 
     return (
         <section className="banner" id="home">
@@ -55,12 +55,15 @@ export const Banner = () => {
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi! I'm Atta a `} 
+                        <h1>{`Hi! I'm Atta a `}
                             <span className="txt-rotate" dataPeriod="1000" data-rotate='["Web Developer", "Web Designer"]'>
                                 <span className="wrap">{text}</span>
                             </span>
                         </h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>                       
+                        <p>
+                            I thrive on crafting seamless and user-friendly experiences through the art and science of coding.
+                            I specialize in front-end development, I love the challenge of making the web a better place.
+                        </p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>

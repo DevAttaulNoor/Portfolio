@@ -5,10 +5,14 @@ import navIcon1 from '../Assets/img/nav-icon1.svg';
 import navIcon2 from '../Assets/img/nav-icon2.svg';
 import navIcon3 from '../Assets/img/nav-icon3.svg';
 
-function BasicExample() {
+function Header() {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-    
+
+    const onUpdateActiveLink = (value) => {
+        setActiveLink(value);
+    }
+
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50) {
@@ -22,10 +26,6 @@ function BasicExample() {
         window.addEventListener('scroll', onScroll)
         return () => window.removeEventListener('scroll', onScroll)
     }, []);
-
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
 
     return(
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
@@ -42,10 +42,9 @@ function BasicExample() {
                     <span className='navbar-text'>
                         <div className='social-icon'>
                             <a href="https://www.linkedin.com/in/atta-ul-noor-2aa7a1236/" target="_blank"> <img src={navIcon1} alt="" /> </a>
-                            <a href="https://www.facebook.com/AttaulNoor.2001/" target="_blank"> <img src={navIcon2} alt="" /> </a>
                             <a href="https://github.com/DevAttaulNoor" target="_blank"> <img src={navIcon3} alt="" /> </a>
+                            <a href="https://www.facebook.com/AttaulNoor.2001/" target="_blank"> <img src={navIcon2} alt="" /> </a>
                         </div>
-                        {/* <button className="vvd"> <span>Lets Connect</span> </button> */}
                     </span>
                 </Navbar.Collapse>
             </Container>
@@ -53,4 +52,4 @@ function BasicExample() {
     );
 }
 
-export default BasicExample;
+export default Header;
