@@ -1,24 +1,27 @@
-# Portfolio Website in React
-This project was bootstrapped with Create React App.
+## Personal Portfolio Website
+The personal portfolio project is a web application created using the React.js library.
 
-# Built using:
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the Personal-portfolio, you can run:
-# **npm start**
-- Runs the app in the development mode.
-- Open http://localhost:3000 to view it in your browser.
-- The page will reload when you make changes.
-- You may also see any lint errors in the console.
+## Demo
+[Live Demo](https://your-demo-link-here.com)
 
-# **npm test**
-- Launches the test runner in the interactive watch mode.
-- See the section about running tests for more information.
+## Technologies Used
+- **React.js**: A JavaScript library for building user interfaces.
 
-# **npm run build**
-- Builds the app for production to the build folder.
-- It correctly bundles React in production mode and optimizes the build for the best performance.
-- The build is minified and the filenames include the hashes.
-- Your app is ready to be deployed!
+## Contributing
+Contributions are welcome! If you want to contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
+
+Please ensure your code follows the project's coding standards and includes tests when applicable.
