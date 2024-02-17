@@ -13,12 +13,12 @@ export const Projects = () => {
             imgUrl: projImg1,
         },
         {
-            title: "Weather Forecaster",
+            title: "Weather Updates",
             description: "Design & Development",
             imgUrl: projImg2,
         },
         {
-            title: "Personal Portfolio",
+            title: "Movies LandingPage",
             description: "Design & Development",
             imgUrl: projImg3,
         },
@@ -31,7 +31,7 @@ export const Projects = () => {
             imgUrl: projImg1,
         },
         {
-            title: "Ecommerce",
+            title: "Ecommerce Website",
             description: "Design & Development",
             imgUrl: projImg2,
         },
