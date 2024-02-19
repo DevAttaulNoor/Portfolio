@@ -1,10 +1,5 @@
 import CircularProgressBar from "./CircularProgressBar";
 import Carousel from 'react-multi-carousel';
-import meter1 from "../Assets/img/meter1.svg";
-import meter2 from "../Assets/img/meter2.svg";
-import meter3 from "../Assets/img/meter3.svg";
-// import arrow1 from "../Assets/img/arrow1.svg";
-// import arrow2 from "../Assets/img/arrow2.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -40,7 +35,7 @@ export const Skills = () => {
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <CircularProgressBar givenPer={80} />
+                                    <CircularProgressBar givenPer={75} />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
@@ -48,34 +43,17 @@ export const Skills = () => {
                                     <h5>Web Designing</h5>
                                 </div>
                                 <div className="item">
-                                    <CircularProgressBar givenPer={70} />
+                                    <CircularProgressBar givenPer={80} />
                                     <h5>HTML</h5>
                                 </div>
                                 <div className="item">
-                                    <CircularProgressBar givenPer={75} />
+                                    <CircularProgressBar givenPer={80} />
                                     <h5>CSS</h5>
                                 </div>
                                 <div className="item">
-                                    <CircularProgressBar givenPer={65} />
+                                    <CircularProgressBar givenPer={70} />
                                     <h5>JavaScript</h5>
                                 </div>
-
-                                {/* <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Designing</h5>
-                                </div> */}
                             </Carousel>
                         </div>
                     </div>

@@ -1,47 +1,50 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import TrackVisibility from 'react-on-screen';
-import projImg1 from "../Assets/img/project-img1.png";
-import projImg2 from "../Assets/img/project-img2.png";
-import projImg3 from "../Assets/img/project-img3.png";
+import smallprojImg1 from "../Assets/img/Projects/calculator.PNG"
+import smallprojImg2 from "../Assets/img/Projects/weatherApp.PNG"
+import smallprojImg3 from "../Assets/img/Projects/movies_landingPage.PNG"
+import mediumprojImg1 from "../Assets/img/Projects/ecom_website.PNG"
+import mediumprojImg2 from "../Assets/img/Projects/shiping_website.PNG"
+import largeprojImg1 from "../Assets/img/Projects/fbclone.PNG"
 
 export const Projects = () => {
     const smallprojects = [
         {
             title: "Calculator",
             description: "Design & Development",
-            imgUrl: projImg1,
+            imgUrl: smallprojImg1,
         },
         {
             title: "Weather Updates",
             description: "Design & Development",
-            imgUrl: projImg2,
+            imgUrl: smallprojImg2,
         },
         {
             title: "Movies LandingPage",
             description: "Design & Development",
-            imgUrl: projImg3,
+            imgUrl: smallprojImg3,
         },
     ];
 
     const mediumprojects = [
         {
-            title: "Shipping Website",
-            description: "Design & Development",
-            imgUrl: projImg1,
-        },
-        {
             title: "Ecommerce Website",
             description: "Design & Development",
-            imgUrl: projImg2,
+            imgUrl: mediumprojImg1,
+        },
+        {
+            title: "Shipping Website",
+            description: "Design & Development",
+            imgUrl: mediumprojImg2,
         },
     ];
 
     const largeprojects = [
         {
             title: "Facebook Clone",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            description: "Development",
+            imgUrl: largeprojImg1,
         },
     ];
 
