@@ -14,6 +14,7 @@ The personal portfolio project is a web application created using the React.js l
 
 ## Technologies Used
 - **React.js**: A JavaScript library for building user interfaces.
+- **CSS**: It is use to give style to the website.
 
 ## Contributing
 Contributions are welcome! If you want to contribute to this project, follow these steps:
