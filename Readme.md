@@ -1,4 +1,4 @@
-## Personal Portfolio Website
+## Personal Portfolio
 The personal portfolio project is a web application created using the React.js library.
 
 ## Table of Contents
