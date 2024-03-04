@@ -25,6 +25,11 @@ export const Projects = () => {
             description: "Design & Development",
             imgUrl: smallprojImg3,
         },
+        {
+            title: "Todo",
+            description: "Design & Development",
+            imgUrl: smallprojImg3,
+        },
     ];
 
     const mediumprojects = [
