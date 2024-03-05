@@ -4,6 +4,7 @@ import TrackVisibility from 'react-on-screen';
 import smallprojImg1 from "../Assets/img/Projects/calculator.PNG"
 import smallprojImg2 from "../Assets/img/Projects/weatherApp.PNG"
 import smallprojImg3 from "../Assets/img/Projects/movies_landingPage.PNG"
+import smallprojImg4 from "../Assets/img/Projects/todo.png"
 import mediumprojImg1 from "../Assets/img/Projects/ecom_website.PNG"
 import mediumprojImg2 from "../Assets/img/Projects/shiping_website.PNG"
 import largeprojImg1 from "../Assets/img/Projects/fbclone.PNG"
@@ -28,7 +29,7 @@ export const Projects = () => {
         {
             title: "Todo",
             description: "Design & Development",
-            imgUrl: smallprojImg3,
+            imgUrl: smallprojImg4,
         },
     ];
 
@@ -64,7 +65,7 @@ export const Projects = () => {
                                     <h2>Projects</h2>
                                     <p>Explore my portfolio to see a showcase of my work. From e-commerce platforms to interactive web applications, each project reflects my commitment to quality and innovation.</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                                        <Nav variant="pills" className="mb-5 nav-pills justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>
                                                 <Nav.Link eventKey="first">Small</Nav.Link>
                                             </Nav.Item>
