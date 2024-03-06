@@ -127,6 +127,11 @@ nav.navbar.scrolled {
     background-color: var(--black-color);
 }
 
+.navbarIcon img{
+    width: 56px;
+    height: 56px;
+}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-size: 16px;
     font-weight: 400;

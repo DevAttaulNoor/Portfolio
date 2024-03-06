@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../Assets/img/logo.svg';
+// import logo from '../Assets/img/logo.svg';
+import logo from '../Assets/img/Logo/logo.png';
 import navIcon1 from '../Assets/img/nav-icon1.svg';
 import navIcon2 from '../Assets/img/nav-icon2.svg';
 import navIcon3 from '../Assets/img/nav-icon3.svg';
@@ -30,7 +31,7 @@ function Header() {
     return(
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
-                <Navbar.Brand href="#home"> <img src={logo} alt="Logo" /> </Navbar.Brand>
+                <Navbar.Brand href="#home" className="navbarIcon"> <img src={logo} alt="Logo" /> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
