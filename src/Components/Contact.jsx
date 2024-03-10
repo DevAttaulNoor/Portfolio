@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from 'react';
 import TrackVisibility from 'react-on-screen';
 import contactImg from "../Assets/img/contact-img.svg";
 
@@ -30,82 +29,72 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact" id="connect">
-            <Container>
-                <Row className="align-items-center">
-                    <Col size={12} md={6}>
-                        <TrackVisibility>
-                            {({ isVisible }) =>
-                                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
-                            }
-                        </TrackVisibility>
-                    </Col>
-                    <Col size={12} md={6}>
-                        <h2>Get In Touch</h2>
-                        <form onSubmit={handleSubmit}>
-                            <Row>
-                                <Col size={12} sm={6} className="px-1">
-                                    <input
-                                        type="text"
-                                        id="fname"
-                                        value={fname}
-                                        placeholder="First Name"
-                                        onChange={(e) => setFname(e.target.value)}
-                                        required
-                                    />
-                                </Col>
+        <div className='contact'>
+            <div className='contactLeft'>
+                <TrackVisibility>
+                    {({ isVisible }) =>
+                        <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
+                    }
+                </TrackVisibility>
+            </div>
 
-                                <Col size={12} sm={6} className="px-1">
-                                    <input
-                                        type="text"
-                                        id="lname"
-                                        value={lname}
-                                        placeholder="Last Name"
-                                        onChange={(e) => setLname(e.target.value)}
-                                        required
-                                    />
-                                </Col>
+            <div className='contactRight'>
+                <div className="contactRight_Top">
+                    <h2>Get In Touch</h2>
+                </div>
 
-                                <Col size={12} sm={6} className="px-1">
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        value={email}
-                                        placeholder="Email Address"
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        required
-                                    />
-                                </Col>
+                <div className="contactRight_Content">
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            id="fname"
+                            value={fname}
+                            placeholder="First Name"
+                            onChange={(e) => setFname(e.target.value)}
+                            required
+                        />
 
-                                <Col size={12} sm={6} className="px-1">
-                                    <input
-                                        type="tel"
-                                        id="number"
-                                        value={number}
-                                        placeholder="Number"
-                                        onChange={(e) => setNumber(e.target.value)}
-                                        required
-                                    />
-                                </Col>
+                        <input
+                            type="text"
+                            id="lname"
+                            value={lname}
+                            placeholder="Last Name"
+                            onChange={(e) => setLname(e.target.value)}
+                            required
+                        />
 
-                                <Col size={12} className="px-1">
-                                    <textarea
-                                        rows="6"
-                                        id="message"
-                                        value={message}
-                                        placeholder="Message"
-                                        onChange={(e) => setMessage(e.target.value)}
-                                        required
-                                    />
-                                    <button type="submit"><span>Submit</span></button>
-                                </Col>
-                            </Row>
-                        </form>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    );
-};
+                        <input
+                            type="email"
+                            id="email"
+                            value={email}
+                            placeholder="Email Address"
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
 
-export default Contact;
+                        <input
+                            type="tel"
+                            id="number"
+                            value={number}
+                            placeholder="Number"
+                            onChange={(e) => setNumber(e.target.value)}
+                            required
+                        />
+
+                        <textarea
+                            rows="6"
+                            id="message"
+                            value={message}
+                            placeholder="Message"
+                            onChange={(e) => setMessage(e.target.value)}
+                            required
+                        />
+                        <button type="submit"><span>Submit</span></button>
+                    </form>
+                </div>
+            </div>
+        </div >
+    )
+}
+
+export default Contact

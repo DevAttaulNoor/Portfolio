@@ -2,20 +2,20 @@ import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-multi-carousel/lib/styles.css';
 import React from 'react'
-import Banner from './Components/Banner';
-import Skills from './Components/Skills';
-import Projects from './Components/Projects';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Skill from './Components/Skill';
+import Project from './Components/Project';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import Header from './Components/Header';
 
 function App() {
 	return (
 		<div className="App">
-			<Header />
-			<Banner />
-			<Skills />
-			<Projects />
+			<Navbar />
+			<Home />
+			<Skill />
+			<Project />
 			<Contact />
 			<Footer />
 		</div>
