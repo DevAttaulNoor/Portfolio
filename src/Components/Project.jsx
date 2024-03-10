@@ -15,21 +15,25 @@ function Project() {
             title: "Calculator",
             description: "Design & Development",
             imgUrl: smallprojImg1,
+            githubLink: "https://devattaulnoor.github.io/Calculator/"
         },
         {
             title: "Weather Updates",
             description: "Design & Development",
             imgUrl: smallprojImg2,
+            githubLink: "https://devattaulnoor.github.io/WeatherApp/"
         },
         {
             title: "Movies LandingPage",
             description: "Design & Development",
             imgUrl: smallprojImg3,
+            githubLink: "https://devattaulnoor.github.io/Movies_LandingPage/"
         },
         {
             title: "Todo",
             description: "Design & Development",
             imgUrl: smallprojImg4,
+            githubLink: "https://devattaulnoor.github.io/redux_toolkit_todo/"
         },
     ];
 
@@ -38,11 +42,13 @@ function Project() {
             title: "Ecommerce Website",
             description: "Design & Development",
             imgUrl: mediumprojImg1,
+            githubLink: "https://devattaulnoor.github.io/ECom_Website/"
         },
         {
             title: "Shipping Website",
             description: "Design & Development",
             imgUrl: mediumprojImg2,
+            githubLink: "https://devattaulnoor.github.io/MDL_Website"
         },
     ];
 

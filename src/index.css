@@ -384,7 +384,10 @@ select:focus {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
-    /* margin-bottom: 24px; */
+}
+
+.projectCard:hover {
+    cursor: pointer;
 }
 
 .projectCard::before {
@@ -538,6 +541,7 @@ select:focus {
 
 .footerLeft{
     width: fit-content;
+    height: fit-content;
 }
 
 .footerLeft img {
