@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
-import Skill_Circularbar from './Skill_Circularbar';
+import Circularbar from './Circularbar';
 
 export const Skill = () => {
     const responsive = {
@@ -34,24 +34,32 @@ export const Skill = () => {
 
                 <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill_Slider">
                     <div className="item">
-                        <Skill_Circularbar givenPer={75} />
+                        <Circularbar givenPer={80} />
                         <h5>Web Development</h5>
                     </div>
                     <div className="item">
-                        <Skill_Circularbar givenPer={80} />
+                        <Circularbar givenPer={80} />
                         <h5>Web Designing</h5>
                     </div>
                     <div className="item">
-                        <Skill_Circularbar givenPer={80} />
+                        <Circularbar givenPer={85} />
                         <h5>HTML</h5>
                     </div>
                     <div className="item">
-                        <Skill_Circularbar givenPer={80} />
+                        <Circularbar givenPer={85} />
                         <h5>CSS</h5>
                     </div>
                     <div className="item">
-                        <Skill_Circularbar givenPer={70} />
+                        <Circularbar givenPer={75} />
                         <h5>JavaScript</h5>
+                    </div>
+                    <div className="item">
+                        <Circularbar givenPer={75} />
+                        <h5>ReactJs</h5>
+                    </div>
+                    <div className="item">
+                        <Circularbar givenPer={75} />
+                        <h5>Redux</h5>
                     </div>
                 </Carousel>
             </div>

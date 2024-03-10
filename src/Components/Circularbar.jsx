@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Skill_Circularbar({ givenPer }) {
+function Circularbar({ givenPer }) {
     const [percentage, setPercentage] = useState(0);
 
     useEffect(() => {
@@ -41,4 +41,4 @@ function Skill_Circularbar({ givenPer }) {
     )
 }
 
-export default Skill_Circularbar
+export default Circularbar

@@ -1,5 +1,4 @@
 import 'animate.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-multi-carousel/lib/styles.css';
 import React from 'react'
 import Navbar from './Components/Navbar';
