@@ -1,5 +1,5 @@
 ## Personal Portfolio
-The personal portfolio project is a web application created using the React.js library.
+The personal portfolio project is a web application created using the reactJs, Css.
 
 ## Table of Contents
 - [Demo](#demo)
@@ -8,8 +8,6 @@ The personal portfolio project is a web application created using the React.js l
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Demo
 
 ## Technologies Used
 - **React.js**: A JavaScript library for building user interfaces.
