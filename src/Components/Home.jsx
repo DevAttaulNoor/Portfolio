@@ -53,7 +53,7 @@ function Home() {
             <div className='homeLeft'>
                 <span id="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! My name is Atta, and I am a `}
-                    <span className="txt-rotate" dataPeriod="1000" data-rotate='["Web Developer", "Web Designer"]'>
+                    <span className="txt-rotate" data-rotate='["Web Developer", "Web Designer"]'>
                         <span className="wrap">{text}</span>
                     </span>
                 </h1>

@@ -16,7 +16,7 @@ function Circularbar({ givenPer }) {
 
     return (
         <div className='circularBar'>
-            <svg class="progressCircle" viewBox="0 0 120 120">
+            <svg className="progressCircle" viewBox="0 0 120 120">
                 <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stopColor="rgba(170, 54, 124, 0.5)" />
                     <stop offset="100%" stopColor="rgba(74, 47, 189, 0.5)" />

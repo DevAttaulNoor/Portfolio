@@ -18,9 +18,7 @@ const Contact = () => {
             return;
         }
 
-        // Here you can implement the code to send the form data to a server or perform other actions
-        console.log('Form submitted:', { fname, lname, email, number, message });
-        // Clear form fields
+        // console.log('Form submitted:', { fname, lname, email, number, message });
         setFname('');
         setLname('');
         setEmail('');
