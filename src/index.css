@@ -52,11 +52,6 @@ a:hover {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
-
 button {
     border: 0;
     background-color: transparent;
@@ -68,11 +63,8 @@ select:focus {
     outline: none;
 }
 
-@media (min-width:1700px) {
-    main .container {
-        max-width: 100%;
-        padding: 0 150px;
-    }
+.scrolled {
+    background-color: var(--black-color);
 }
 
 /**............Navbar Component............*/
@@ -126,7 +118,7 @@ select:focus {
     justify-content: space-between;
 }
 
-.navbarRight button{
+.navbarRight button {
     font-size: 24px;
     font-weight: 500;
     color: #fff;
@@ -136,8 +128,9 @@ select:focus {
     cursor: pointer;
 }
 
-.navbar.scrolled {
-    background-color: var(--black-color);
+.navbarSml,
+.navbarSmlContent{
+    display: none;
 }
 
 /**............Home Component............*/
@@ -153,7 +146,6 @@ select:focus {
 
 .homeLeft {
     width: 50%;
-    padding: 80px 40px 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -175,7 +167,6 @@ select:focus {
     letter-spacing: 0.8px;
     line-height: 1.2;
     margin-bottom: 20px;
-    display: block;
 }
 
 .homeLeft .txt-rotate>.wrap {
@@ -189,24 +180,25 @@ select:focus {
 }
 
 .homeRight {
-    width: 40%;
+    width: 45%;
 }
 
 .homeRight img {
+    width: 100%;
     animation: updown 3s linear infinite;
 }
 
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-25px);
     }
 
     50% {
-        transform: translateY(20px);
+        transform: translateY(25px);
     }
 
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-25px);
     }
 }
 
@@ -231,11 +223,12 @@ select:focus {
 }
 
 .skill_Box p {
-    color: #B8B8B8;
     font-size: 16px;
-    letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 15px 0 70px 0;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin: 15px 150px 60px 150px;
+    color: #B8B8B8;
 }
 
 .skill_Box .skill_Slider {
@@ -244,7 +237,7 @@ select:focus {
     position: relative;
 }
 
-.skill_Slider .item h5{
+.skill_Slider .item h5 {
     font-size: 16px;
     font-weight: 500;
 }
@@ -283,13 +276,12 @@ select:focus {
 }
 
 .projectTop p {
-    color: #B8B8B8;
     font-size: 16px;
-    letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px auto 0 auto;
+    letter-spacing: 0.8px;
     text-align: center;
-    width: 56%;
+    margin: 15px 150px 0 150px;
+    color: #B8B8B8;
 }
 
 .projectMiddle {
@@ -316,7 +308,6 @@ select:focus {
     text-align: center;
     z-index: 0;
     border: 1px solid rgba(255, 255, 255, 0.5);
-
 }
 
 .projectMiddle p:hover {
@@ -362,13 +353,6 @@ select:focus {
     justify-content: space-between;
 }
 
-.projectBottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .projectBottom_Content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -402,6 +386,12 @@ select:focus {
 
 .projectCard:hover::before {
     height: 100%;
+}
+
+.projectCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .projectCard_txt {
@@ -443,12 +433,13 @@ select:focus {
     padding: 80px;
 }
 
-.contactLeft {
-    width: 80%;
+.contactLeft img {
+    width: 100%;
 }
 
 .contactRight {
-    margin-left: 80px;
+    width: 60%;
+    margin-left: 40px;
 }
 
 .contactRight_Top h2 {
@@ -539,38 +530,38 @@ select:focus {
     padding: 20px 80px;
 }
 
-.footerLeft{
+.footerLeft {
     width: fit-content;
     height: fit-content;
 }
 
 .footerLeft img {
-    width: 20%;
+    width: 82px;
+    height: 82px;
 }
 
 .footerRight {
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    align-items: center;
 }
 
 .footerRight .socialIcons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .footerRight .socialIcons a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    line-height: 1;
     display: inline-flex;
-    border-radius: 50%;
-    margin-right: 6px;
     align-items: center;
     justify-content: center;
-    line-height: 1;
+    border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(217, 217, 217, 0.1);
 }
 
 .footerRight .socialIcons a::before {
@@ -600,9 +591,324 @@ select:focus {
 }
 
 .footerRight p {
-    font-weight: 400;
     font-size: 14px;
-    color: #B8B8B8;
+    font-weight: 400;
     letter-spacing: 0.5px;
-    margin-top: 20px;
+    margin-top: 15px;
+    color: #B8B8B8;
+}
+
+/** ...................Responsive Media Queries.................... */
+@media screen and (max-width: 990px) {
+
+    /**............Navbar Component............*/
+    .navbar,
+    .hidden {
+        display: none;
+    }
+
+    .navbarSml {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 40px;
+        transition: 0.2s ease-in-out;
+        z-index: 9999;
+    }
+
+    .navbarSml #logo,
+    .navbarSml #navmenu {
+        width: 64px;
+        height: 64px;
+    }
+
+    .navbarSmlContent.visible {
+        width: 100%;
+        position: fixed;
+        top: 75px;
+        padding: 0 55px 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        transition: 0.2s ease-in-out;
+        z-index: 9998;
+    }
+
+    .navbarSmlContent.visible a {
+        letter-spacing: 0.8px;
+        padding: 5px 0;
+        opacity: 0.5;
+        color: var(--white-color);
+    }
+
+    .navbarSmlContent.visible a:hover,
+    .navbarSmlContent.visible a.active {
+        opacity: 1;
+    }
+
+    /**............Home Component............*/
+    .home {
+        padding: 200px 40px 140px 40px;
+    }
+
+    .homeLeft #tagline {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-bottom: 15px;
+    }
+
+    .homeLeft h1 {
+        font-size: 36px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+
+    .homeLeft p {
+        line-height: 1.1em;
+    }
+
+    /**............Skill Component............*/
+    .skill_Box {
+        padding: 40px;
+        margin: 0 40px;
+    }
+
+    .skill_Box p {
+        line-height: 1.2em;
+        margin: 15px 60px 40px 60px;
+    }
+
+    .skill_Box .skill_Slider {
+        width: 100%;
+    }
+
+    .circularBar .progressCircle {
+        width: 160px;
+        height: 160px;
+    }
+
+    /**............Projects Component............*/
+    .project {
+        padding: 80px 40px;
+    }
+
+    .projectTop p {
+        line-height: 1.2em;
+        margin: 15px 60px 0 60px;
+    }
+
+    .projectMiddle {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .projectMiddle p {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .projectBottom_Content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /**............Contact Component............*/
+    .contact {
+        padding: 80px 40px;
+    }
+
+    .contactLeft {
+        width: 50%;
+    }
+
+    .contactRight {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .contactRight_Top h2 {
+        margin-bottom: 20px;
+    }
+
+    .contactRight_Content form input {
+        width: 50%;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .contactRight_Content form textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .contactRight_Content form button {
+        padding: 10px 40px;
+        margin-top: 15px;
+    }
+
+    /**............Footer Component............*/
+    .footer {
+        padding: 20px 40px;
+    }
+
+    .footerRight {
+        align-items: flex-end;
+    }
+
+    .footerRight p {
+        margin-top: 10px;
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    /**............Navbar Component............*/
+    .navbarSml {
+        padding: 20px;
+    }
+
+    .navbarSml #logo,
+    .navbarSml #navmenu {
+        width: 56px;
+        height: 56px;
+    }
+
+    .navbarSmlContent.visible {
+        top: 85px;
+        padding: 0 35px 10px 0;
+    }
+
+    /**............Home Component............*/
+    .home {
+        flex-direction: column;
+        padding: 220px 20px 20px;
+    }
+
+    .homeLeft {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .homeLeft #tagline {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .homeLeft h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .homeLeft p {
+        line-height: 1.2em;
+    }
+
+    .homeRight {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .homeRight img {
+        animation: leftright 3s linear infinite;
+    }
+
+    @keyframes leftright {
+        0% {
+            transform: translateX(-20px);
+        }
+
+        50% {
+            transform: translateX(20px);
+        }
+
+        100% {
+            transform: translateX(-20px);
+        }
+    }
+
+    /**............Skill Component............*/
+    .skill_Box {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .skill_Box p {
+        line-height: 1.2em;
+        margin: 15px 0 40px 0;
+    }
+
+    /**............Projects Component............*/
+    .project {
+        padding: 80px 20px;
+    }
+
+    .projectTop p {
+        line-height: 1.2em;
+        margin: 15px 0 0 0;
+    }
+
+    .projectMiddle {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .projectMiddle p {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .projectBottom_Content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /**............Contact Component............*/
+    .contact {
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 80px 20px;
+    }
+
+    .contactLeft {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .contactRight {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contactRight_Top h2 {
+        margin-bottom: 10px;
+    }
+
+    .contactRight_Content form button {
+        padding: 10px 40px;
+        margin-top: 10px;
+    }
+
+    /**............Footer Component............*/
+    .footer {
+        padding: 20px;
+    }
+
+    .footerRight {
+        width: 40%;
+    }
+
+    .footerRight .socialIcons {
+        gap: 6px;
+    }
+    
+    .footerRight .socialIcons a {
+        width: 36px;
+        height: 36px;
+    }
 }

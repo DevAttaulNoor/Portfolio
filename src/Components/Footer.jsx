@@ -14,8 +14,8 @@ export const Footer = () => {
             <div className="footerRight">
                 <div className="socialIcons">
                     <a href="https://www.linkedin.com/in/atta-ul-noor-2aa7a1236/" target="_blank"> <img src={navIcon1} alt="" /> </a>
-                    <a href="https://www.facebook.com/AttaulNoor.2001/" target="_blank"> <img src={navIcon2} alt="" /> </a>
                     <a href="https://github.com/DevAttaulNoor" target="_blank"> <img src={navIcon3} alt="" /> </a>
+                    <a href="https://www.facebook.com/AttaulNoor.2001/" target="_blank"> <img src={navIcon2} alt="" /> </a>
                 </div>
                 <p>Copyright 2024. All Rights Reserved</p>
             </div>

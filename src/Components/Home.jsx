@@ -52,7 +52,7 @@ function Home() {
         <div className='home'>
             <div className='homeLeft'>
                 <span id="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Atta a `}
+                <h1>{`Hi! My name is Atta, and I am a `}
                     <span className="txt-rotate" dataPeriod="1000" data-rotate='["Web Developer", "Web Designer"]'>
                         <span className="wrap">{text}</span>
                     </span>
@@ -71,19 +71,6 @@ function Home() {
                         </div>}
                 </TrackVisibility>
             </div>
-
-            {/* <section className="banner" id="home">
-                <Container>
-                    <Row className="aligh-items-center">
-                        <Col xs={12} md={6} xl={7}>
-                            
-                        </Col>
-                        <Col xs={12} md={6} xl={5}>
-                            
-                        </Col>
-                    </Row>
-                </Container>
-            </section> */}
         </div>
     )
 }

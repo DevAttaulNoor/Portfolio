@@ -5,7 +5,6 @@ import Circularbar from './Circularbar';
 export const Skill = () => {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -15,7 +14,7 @@ export const Skill = () => {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -27,10 +26,7 @@ export const Skill = () => {
         <div className='skill'>
             <div className="skill_Box wow zoomIn">
                 <h2>Skills</h2>
-                <p>
-                    My toolkit includes languages like HTML, CSS, JavaScript, and proficiency in frameworks such as React.js.
-                    <br></br>I'm always on the lookout for the latest technologies to stay at the forefront of web development trends.
-                </p>
+                <p>My toolkit includes HTML, CSS, JavaScript, and proficiency in frameworks such as React.js. I'm always on the lookout for the latest technologies to stay at the forefront of web development trends.</p>
 
                 <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill_Slider">
                     <div className="item">
