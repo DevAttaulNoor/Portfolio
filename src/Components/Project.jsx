@@ -10,6 +10,8 @@ import mediumprojImg2 from "../Assets/img/Projects/shiping_website.PNG";
 import largeprojImg1 from "../Assets/img/Projects/fbclone.PNG";
 
 function Project() {
+    const [activeCategory, setActiveCategory] = useState('beginner');
+    
     const smallprojects = [
         {
             title: "Calculator",
@@ -59,8 +61,6 @@ function Project() {
             imgUrl: largeprojImg1,
         },
     ];
-
-    const [activeCategory, setActiveCategory] = useState('beginner');
 
     return (
         <div className='project'>

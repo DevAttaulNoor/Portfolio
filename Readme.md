@@ -1,25 +1,20 @@
-## Personal Portfolio
+## Introduction
 The personal portfolio project is a web application created using the reactJs, Css.
 
-## Table of Contents
-- [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Link to visit the website: https://devattaulnoor.github.io/
 
 ## Technologies Used
 - **React.js**: A JavaScript library for building user interfaces.
-- **CSS**: It is use to give style to the website.
+- **CSS**: Use to give style to the website.
 
-## Contributing
-Contributions are welcome! If you want to contribute to this project, follow these steps:
+## Getting Started
+1. Clone the repository: `git clone https://github.com/DevAttaulNoor/Portfolio`
+2. Navigate to the project directory: `cd Portfolio`
+3. Install dependencies: `npm install`
+4. Run the application: `npm start`
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Submit a pull request.
+## License
+This project is licensed under the DevAttaulNoor.
 
-Please ensure your code follows the project's coding standards and includes tests when applicable.
+## Contact
+If you have any questions or suggestions, feel free to contact the project maintainer at attaulnoor2001@gmail.com

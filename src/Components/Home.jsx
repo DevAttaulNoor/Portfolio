@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import TrackVisibility from 'react-on-screen';
-import banner from "../Assets/img/header-img.svg";
+import homebanner from "../Assets/img/Home/homeSVG.svg";
 
 function Home() {
     const [loopNum, setLoopNum] = useState(0);
@@ -67,7 +67,7 @@ function Home() {
                 <TrackVisibility>
                     {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                            <img src={banner} alt="homeBanner" />
+                            <img src={homebanner} alt="homeBanner" />
                         </div>}
                 </TrackVisibility>
             </div>

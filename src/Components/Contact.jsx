@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TrackVisibility from 'react-on-screen';
-import contactImg from "../Assets/img/contact-img.svg";
+import contactSVG from "../Assets/img/Contact/contactSVG.svg";
 
 const Contact = () => {
     const [fname, setFname] = useState('');
@@ -33,7 +33,7 @@ const Contact = () => {
             <div className='contactLeft'>
                 <TrackVisibility>
                     {({ isVisible }) =>
-                        <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
+                        <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactSVG} alt="Contact Us" />
                     }
                 </TrackVisibility>
             </div>

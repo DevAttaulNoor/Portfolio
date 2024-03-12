@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 function Circularbar({ givenPer }) {
     const [percentage, setPercentage] = useState(0);
+    const radius = 50;
+    const circumference = 2 * Math.PI * radius;
+    const offset = circumference - (percentage / 100) * circumference;
 
     useEffect(() => {
         setTimeout(() => {
@@ -10,10 +13,6 @@ function Circularbar({ givenPer }) {
             }
         }, 50);
     }, [percentage, givenPer]);
-
-    const radius = 50;
-    const circumference = 2 * Math.PI * radius;
-    const offset = circumference - (percentage / 100) * circumference;
 
     return (
         <div className='circularBar'>

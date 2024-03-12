@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../Assets/img/Logo/logo.png';
-import navmenu from '../Assets/img/NavMenu.png';
+import navmenu from '../Assets/img/Navbar/navMenu.png';
 
 function Navbar() {
-    const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+    const [activeLink, setActiveLink] = useState('home');
     const [navbarSmlContentVisible, setNavbarSmlContentVisible] = useState(false);
 
     const openPdf = () => {
