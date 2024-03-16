@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, forwardRef } from 'react';
 import TrackVisibility from 'react-on-screen';
 import homebanner from "../Assets/img/Home/homeSVG.svg";
 
-function Home() {
+export const Home = forwardRef((props, ref) => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -49,10 +49,10 @@ function Home() {
     }, [text])
 
     return (
-        <div className='home'>
+        <div className='home' ref={ref}>
             <div className='homeLeft'>
                 <span id="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! My name is Atta, and I am a `}
+                <h1>{`Hi! I'm Atta a `}
                     <span className="txt-rotate" data-rotate='["Web Developer", "Web Designer"]'>
                         <span className="wrap">{text}</span>
                     </span>
@@ -72,7 +72,7 @@ function Home() {
                 </TrackVisibility>
             </div>
         </div>
-    )
-}
+    );
+});
 
-export default Home
+export default Home;

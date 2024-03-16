@@ -136,8 +136,9 @@ select:focus {
 /**............Home Component............*/
 .home {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 180px 80px 100px 80px;
+    padding: 120px 80px 100px 80px;
     background-image: url('./Assets/img/Home/homeBg.png');
     background-position: top center;
     background-size: cover;
@@ -257,7 +258,7 @@ select:focus {
 
 .circularBar #percentage {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
@@ -785,7 +786,7 @@ select:focus {
     /**............Home Component............*/
     .home {
         flex-direction: column;
-        padding: 220px 20px 20px;
+        padding: 140px 20px 20px;
     }
 
     .homeLeft {
@@ -811,7 +812,7 @@ select:focus {
     }
 
     .homeRight {
-        width: 100%;
+        width: 80%;
         margin-top: 20px;
     }
 

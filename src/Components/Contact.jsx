@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import TrackVisibility from 'react-on-screen';
 import contactSVG from "../Assets/img/Contact/contactSVG.svg";
 
-const Contact = () => {
+export const Contact = forwardRef((props, ref) => {
     const [fname, setFname] = useState('');
     const [lname, setLname] = useState('');
     const [email, setEmail] = useState('');
@@ -27,7 +27,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='contact'>
+        <div className='contact' ref={ref}>
             <div className='contactLeft'>
                 <TrackVisibility>
                     {({ isVisible }) =>
@@ -92,7 +92,7 @@ const Contact = () => {
                 </div>
             </div>
         </div >
-    )
-}
+    );
+});
 
 export default Contact

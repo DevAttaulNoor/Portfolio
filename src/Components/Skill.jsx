@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Carousel from 'react-multi-carousel';
 import Circularbar from './Circularbar';
 
-export const Skill = () => {
+export const Skill = forwardRef((props, ref) => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -23,7 +23,7 @@ export const Skill = () => {
     };
 
     return (
-        <div className='skill'>
+        <div className='skill' ref={ref}>
             <div className="skill_Box wow zoomIn">
                 <h2>Skills</h2>
                 <p>My toolkit includes HTML, CSS, JavaScript, and proficiency in frameworks such as React.js. I'm always on the lookout for the latest technologies to stay at the forefront of web development trends.</p>
@@ -43,7 +43,7 @@ export const Skill = () => {
                     </div>
                     <div className="item">
                         <Circularbar givenPer={85} />
-                        <h5>CSS</h5>
+                        <h5>CSS</h5>s
                     </div>
                     <div className="item">
                         <Circularbar givenPer={75} />
@@ -60,7 +60,7 @@ export const Skill = () => {
                 </Carousel>
             </div>
         </div>
-    )
-}
+    );
+});
 
 export default Skill

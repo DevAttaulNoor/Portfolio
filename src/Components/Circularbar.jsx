@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Circularbar({ givenPer }) {
+export const Circularbar = ({ givenPer }) => {
     const [percentage, setPercentage] = useState(0);
     const radius = 50;
     const circumference = 2 * Math.PI * radius;

@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import logo from '../Assets/img/Logo/logo.png';
 import navmenu from '../Assets/img/Navbar/navMenu.png';
 
-function Navbar() {
+function Navbar({ scrollToHome, scrollToSkill, scrollToProject, scrollToContact }) {
     const [scrolled, setScrolled] = useState(false);
     const [activeLink, setActiveLink] = useState('home');
     const [navbarSmlContentVisible, setNavbarSmlContentVisible] = useState(false);
 
     const openPdf = () => {
-        window.open('https://docs.google.com/document/d/1qHOZ2psW0e00qneCiT2lXXJEskE1dsZyvuCIhGH_gts/edit', '_blank');
+        window.open('https://drive.google.com/file/d/1-7j_do-rUNbbAgmfItI7Vryikt4LjxQ3/view?usp=sharing', '_blank');
     };
 
     const onUpdateActiveLink = (value) => {
@@ -41,16 +41,16 @@ function Navbar() {
                 </div>
 
                 <div className='navbarMiddle'>
-                    <a href='#home' className={activeLink === 'home' ? 'active' : ''} onClick={() => onUpdateActiveLink('home')}>
+                    <a href='#home' className={activeLink === 'home' ? 'active' : ''} onClick={() => { onUpdateActiveLink('home'); scrollToHome(); }}>
                         Home
                     </a>
-                    <a href='#skills' className={activeLink === 'skills' ? 'active' : ''} onClick={() => onUpdateActiveLink('skills')}>
+                    <a href='#skills' className={activeLink === 'skills' ? 'active' : ''} onClick={() => { onUpdateActiveLink('skills'); scrollToSkill(); }}>
                         Skills
                     </a>
-                    <a href='#project' className={activeLink === 'project' ? 'active' : ''} onClick={() => onUpdateActiveLink('project')}>
+                    <a href='#project' className={activeLink === 'project' ? 'active' : ''} onClick={() => { onUpdateActiveLink('project'); scrollToProject(); }}>
                         Projects
                     </a>
-                    <a href='#connect' className={activeLink === 'connect' ? 'active' : ''} onClick={() => onUpdateActiveLink('connect')}>
+                    <a href='#connect' className={activeLink === 'connect' ? 'active' : ''} onClick={() => { onUpdateActiveLink('connect'); scrollToContact(); }}>
                         Contact
                     </a>
                 </div>
@@ -66,16 +66,16 @@ function Navbar() {
             </div>
 
             <div className={scrolled ? `navbarSmlContent ${navbarSmlContentVisible ? 'visible' : 'hidden'} scrolled` : `navbarSmlContent ${navbarSmlContentVisible ? 'visible' : 'hidden'}`}>
-                <a href='#home' className={activeLink === 'home' ? 'active' : ''} onClick={() => onUpdateActiveLink('home')}>
+                <a href='#home' className={activeLink === 'home' ? 'active' : ''} onClick={() => { onUpdateActiveLink('home'); scrollToHome(); }}>
                     Home
                 </a>
-                <a href='#skills' className={activeLink === 'skills' ? 'active' : ''} onClick={() => onUpdateActiveLink('skills')}>
+                <a href='#skills' className={activeLink === 'skills' ? 'active' : ''} onClick={() => { onUpdateActiveLink('skills'); scrollToSkill(); }}>
                     Skills
                 </a>
-                <a href='#project' className={activeLink === 'project' ? 'active' : ''} onClick={() => onUpdateActiveLink('project')}>
+                <a href='#project' className={activeLink === 'project' ? 'active' : ''} onClick={() => { onUpdateActiveLink('project'); scrollToProject(); }}>
                     Projects
                 </a>
-                <a href='#connect' className={activeLink === 'connect' ? 'active' : ''} onClick={() => onUpdateActiveLink('connect')}>
+                <a href='#connect' className={activeLink === 'connect' ? 'active' : ''} onClick={() => { onUpdateActiveLink('connect'); scrollToContact(); }}>
                     Contact
                 </a>
                 <a onClick={openPdf}>Resume</a>
