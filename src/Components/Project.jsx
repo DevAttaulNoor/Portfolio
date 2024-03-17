@@ -6,7 +6,7 @@ import smallprojImg3 from "../Assets/img/Projects/movies_landingPage.PNG";
 import smallprojImg4 from "../Assets/img/Projects/todo.png";
 import mediumprojImg1 from "../Assets/img/Projects/ecom_website.PNG";
 import mediumprojImg2 from "../Assets/img/Projects/shiping_website.PNG";
-import largeprojImg1 from "../Assets/img/Projects/fbclone.PNG";
+import largeprojImg1 from "../Assets/img/Projects/fbclone.png";
 
 export const Project = forwardRef((props, ref) => {
     const [activeCategory, setActiveCategory] = useState('beginner');

@@ -18,7 +18,7 @@ export const Contact = forwardRef((props, ref) => {
             return;
         }
 
-        // console.log('Form submitted:', { fname, lname, email, number, message });
+        console.log('Form submitted:', { fname, lname, email, number, message });
         setFname('');
         setLname('');
         setEmail('');
@@ -91,7 +91,7 @@ export const Contact = forwardRef((props, ref) => {
                     </form>
                 </div>
             </div>
-        </div >
+        </div>
     );
 });
 
