@@ -78,7 +78,7 @@ function Navbar({ scrollToHome, scrollToSkill, scrollToProject, scrollToContact 
                 <a href='#connect' className={activeLink === 'connect' ? 'active' : ''} onClick={() => { onUpdateActiveLink('connect'); scrollToContact(); }}>
                     Contact
                 </a>
-                <a onClick={openPdf}>Resume</a>
+                <button onClick={openPdf}>Resume</button>
             </div>
         </>
     );

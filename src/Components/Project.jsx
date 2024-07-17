@@ -58,6 +58,7 @@ export const Project = forwardRef((props, ref) => {
             title: "Facebook Clone",
             description: "Development",
             imgUrl: largeprojImg1,
+            githubLink: "https://devattaulnoor.github.io/FacebookClone-ReactWebsite"
         },
     ];
 
