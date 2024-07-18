@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.27273536.css",
+    "main.js": "/Portfolio/static/js/main.87eb22e2.js",
+    "static/media/movies_landingPage.PNG": "/Portfolio/static/media/movies_landingPage.7e64db63e780bd531ed1.PNG",
+    "static/media/shiping_website.PNG": "/Portfolio/static/media/shiping_website.bb4f5e2ffa5030a7182b.PNG",
+    "static/media/weatherApp.PNG": "/Portfolio/static/media/weatherApp.4a8cfcd1928dc2a81dad.PNG",
+    "static/media/ecom_website.PNG": "/Portfolio/static/media/ecom_website.e0abc173925045e3ef88.PNG",
+    "static/media/calculator.PNG": "/Portfolio/static/media/calculator.51e2f4331c4b6d310ade.PNG",
+    "static/media/logo.png": "/Portfolio/static/media/logo.3c01a4e6b976120a995b.png",
+    "static/media/homeBg.png": "/Portfolio/static/media/homeBg.cc1273af450504afe755.png",
+    "static/media/homeSVG.svg": "/Portfolio/static/media/homeSVG.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/footerBg.png": "/Portfolio/static/media/footerBg.7bd67c0f73571d0acc02.png",
+    "static/media/contactSVG.svg": "/Portfolio/static/media/contactSVG.87eac2b29352fa01abb2f9510ef6ac7e.svg",
+    "static/media/fbclone.png": "/Portfolio/static/media/fbclone.8e9164c82b950c48c771.png",
+    "static/media/todo.png": "/Portfolio/static/media/todo.3e00dceaa5fdf6a43f41.png",
+    "static/media/revicons.eot": "/Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/github.svg": "/Portfolio/static/media/github.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "static/media/linkedIn.svg": "/Portfolio/static/media/linkedIn.721d5414c26365f117e71d46b6641cb2.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/facebook.svg": "/Portfolio/static/media/facebook.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.27273536.css.map": "/Portfolio/static/css/main.27273536.css.map",
+    "main.87eb22e2.js.map": "/Portfolio/static/js/main.87eb22e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27273536.css",
+    "static/js/main.87eb22e2.js"
+  ]
+}
