@@ -43,7 +43,7 @@ export const Skill = forwardRef((props, ref) => {
                     </div>
                     <div className="item">
                         <Circularbar givenPer={85} />
-                        <h5>CSS</h5>s
+                        <h5>CSS</h5>
                     </div>
                     <div className="item">
                         <Circularbar givenPer={75} />
