@@ -9,6 +9,7 @@ Link to visit the website: https://devattaulnoor.github.io/Portfolio
 - **React Multi Carousel**: A flexible and responsive carousel component for React that allows for easy creation of carousels with multiple items visible at once.
 - **React on Screen**: A React component that can be used to detect when elements are within the viewport or not. Useful for lazy-loading images or triggering animations.
 - **Animate Css**: A library of ready-to-use, cross-browser animations for use in your web projects. Great for enhancing the UI/UX with smooth transitions.
+- **EmailJs**: A library that enables sending emails directly from your client-side JavaScript applications. It allows you to integrate email functionality without the need for a backend server.
 
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/DevAttaulNoor/Portfolio.git`
