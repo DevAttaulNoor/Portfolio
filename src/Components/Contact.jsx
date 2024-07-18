@@ -1,4 +1,5 @@
-import React, { useState, forwardRef } from 'react';
+import React, { useState, useRef, forwardRef } from 'react';
+import emailjs from '@emailjs/browser';
 import TrackVisibility from 'react-on-screen';
 import contactSVG from "../Assets/img/Contact/contactSVG.svg";
 
@@ -8,6 +9,7 @@ export const Contact = forwardRef((props, ref) => {
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [message, setMessage] = useState('');
+    const formRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,7 +20,20 @@ export const Contact = forwardRef((props, ref) => {
             return;
         }
 
-        console.log('Form submitted:', { fname, lname, email, number, message });
+        emailjs.sendForm('service_lruy9xa', 'template_jro2edo', formRef.current, {
+                publicKey: 'qAmbbJxm0DfTTKkkU',
+            })
+            .then(
+                () => {
+                    alert('Your message has been sucessfully sent!');
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    alert('Please try again!');
+                    console.log('FAILED...', error.text);
+                },
+            );
+
         setFname('');
         setLname('');
         setEmail('');
@@ -42,10 +57,11 @@ export const Contact = forwardRef((props, ref) => {
                 </div>
 
                 <div className="contactRight_Content">
-                    <form onSubmit={handleSubmit}>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                         <input
                             type="text"
                             id="fname"
+                            name='from_firstname'
                             value={fname}
                             placeholder="First Name"
                             onChange={(e) => setFname(e.target.value)}
@@ -55,6 +71,7 @@ export const Contact = forwardRef((props, ref) => {
                         <input
                             type="text"
                             id="lname"
+                            name='from_lastname'
                             value={lname}
                             placeholder="Last Name"
                             onChange={(e) => setLname(e.target.value)}
@@ -64,6 +81,7 @@ export const Contact = forwardRef((props, ref) => {
                         <input
                             type="email"
                             id="email"
+                            name='from_email'
                             value={email}
                             placeholder="Email Address"
                             onChange={(e) => setEmail(e.target.value)}
@@ -73,6 +91,7 @@ export const Contact = forwardRef((props, ref) => {
                         <input
                             type="tel"
                             id="number"
+                            name='from_number'
                             value={number}
                             placeholder="Number"
                             onChange={(e) => setNumber(e.target.value)}
@@ -82,6 +101,7 @@ export const Contact = forwardRef((props, ref) => {
                         <textarea
                             rows="5"
                             id="message"
+                            name='message'
                             value={message}
                             placeholder="Message"
                             onChange={(e) => setMessage(e.target.value)}
