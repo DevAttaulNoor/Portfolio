@@ -1,4 +1,4 @@
-/**............Default CSS............*/
+/** Global Style Section */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -22,8 +22,8 @@ body {
     position: relative;
     overflow-x: hidden;
     font-weight: 400;
-    background-color: var(--black-color) !important;
     color: var(--white-color) !important;
+    background-color: var(--black-color) !important;
 }
 
 h1,
@@ -40,8 +40,8 @@ h6 {
 p,
 a,
 li,
-button,
-ul {
+ul,
+button {
     margin: 0;
     padding: 0;
     line-height: normal;
@@ -67,25 +67,23 @@ select:focus {
     background-color: var(--black-color);
 }
 
-/**............Navbar Component............*/
+/** Navbar Section */
 .navbar {
-    width: 100%;
     position: fixed;
     top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 80px;
-    transition: 0.2s ease-in-out;
-    z-index: 9999;
+    z-index: 9;
+    transition: 0.3s ease-in-out;
 }
 
+/* NavbarLeft Section */
 .navbarLeft {
     display: flex;
     align-items: center;
-}
-
-.navbarLeft:hover {
     cursor: pointer;
 }
 
@@ -100,10 +98,11 @@ select:focus {
     margin-left: 8px;
 }
 
+/* NavbarMiddle Section */
 .navbarMiddle a {
     padding: 0 20px;
-    opacity: 0.5;
     letter-spacing: 0.8px;
+    opacity: 0.5;
     color: var(--white-color);
 }
 
@@ -112,39 +111,43 @@ select:focus {
     opacity: 1;
 }
 
+/* NavbarRight Section */
 .navbarRight {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.navbarRight button {
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
-}
-
-.navbarRight button:hover {
     cursor: pointer;
 }
 
+.navbarRight img {
+    width: 56px;
+    height: 56px;
+}
+
+.navbarRight p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+/** NavbarSml Section */
 .navbarSml,
-.navbarSmlContent{
+.navbarSmlContent {
     display: none;
 }
 
-/**............Home Component............*/
+/** Home Section */
 .home {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 120px 80px 100px 80px;
     background-image: url('./Assets/img/Home/homeBg.png');
-    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
+/* HomeLeft Section */
 .homeLeft {
     width: 50%;
     display: flex;
@@ -156,7 +159,7 @@ select:focus {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.8px;
-    padding: 10px 16px;
+    padding: 10px 15px;
     margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
@@ -180,6 +183,7 @@ select:focus {
     color: #B8B8B8;
 }
 
+/* HomeRight Section */
 .homeRight {
     width: 45%;
 }
@@ -203,7 +207,7 @@ select:focus {
     }
 }
 
-/**............Skill Component............*/
+/** Skill Section */
 .skill {
     position: relative;
     padding: 80px 0;
@@ -211,11 +215,11 @@ select:focus {
 }
 
 .skill_Box {
-    background: #151515;
-    border-radius: 60px;
     text-align: center;
     padding: 40px 20px;
     margin: 0 80px;
+    border-radius: 60px;
+    background: #151515;
 }
 
 .skill_Box h2 {
@@ -224,18 +228,18 @@ select:focus {
 }
 
 .skill_Box p {
+    text-align: center;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.8px;
-    text-align: center;
     margin: 15px 150px 60px 150px;
     color: #B8B8B8;
 }
 
 .skill_Box .skill_Slider {
+    position: relative;
     width: 80%;
     margin: 0 auto;
-    position: relative;
 }
 
 .skill_Slider .item h5 {
@@ -243,7 +247,7 @@ select:focus {
     font-weight: 500;
 }
 
-/**............Skill Circularbar Component............*/
+/** Circularbar Section */
 .circularBar {
     display: flex;
     flex-direction: column;
@@ -264,12 +268,13 @@ select:focus {
     font-size: 18px;
 }
 
-/**............Projects Component............*/
+/** Project Section */
 .project {
     position: relative;
     padding: 80px;
 }
 
+/* ProjectTop Section */
 .projectTop h2 {
     font-size: 45px;
     font-weight: 700;
@@ -285,6 +290,7 @@ select:focus {
     color: #B8B8B8;
 }
 
+/* ProjectMiddle Section */
 .projectMiddle {
     width: 60%;
     display: flex;
@@ -296,23 +302,20 @@ select:focus {
 }
 
 .projectMiddle p {
-    background-color: transparent;
-    border-radius: 0;
-    padding: 17px 0;
-    color: #fff;
-    width: 100%;
-    font-size: 17px;
-    letter-spacing: 0.8px;
-    font-weight: 500;
     position: relative;
-    transition: 0.3s ease-in-out;
+    width: 100%;
     text-align: center;
-    z-index: 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    padding: 15px 0;
+    border-radius: 0;
     border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.projectMiddle p:hover {
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+    z-index: 0;
+    color: #fff;
+    background-color: transparent;
 }
 
 .projectMiddle p:nth-child(1) {
@@ -326,13 +329,13 @@ select:focus {
 .projectMiddle p::before {
     content: "";
     position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     top: 0;
     left: 0;
+    width: 0;
+    height: 100%;
     z-index: -1;
     transition: 0.3s ease-in-out;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
 }
 
 .projectMiddle p:nth-child(1)::before {
@@ -347,6 +350,7 @@ select:focus {
     width: 100% !important;
 }
 
+/* ProjectBottom Section */
 .projectBottom {
     display: flex;
     flex-direction: column;
@@ -364,25 +368,22 @@ select:focus {
     display: none;
 }
 
-/**............ProjectCard Component............*/
+/** ProjectCard Section */
 .projectCard {
     position: relative;
     border-radius: 30px;
-    overflow: hidden;
-}
-
-.projectCard:hover {
     cursor: pointer;
+    overflow: hidden;
 }
 
 .projectCard::before {
     content: "";
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    opacity: 0.85;
     position: absolute;
     width: 100%;
     height: 0;
-    transition: 0.4s ease-in-out;
+    opacity: 0.85;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
 }
 
 .projectCard:hover::before {
@@ -397,13 +398,13 @@ select:focus {
 
 .projectCard_txt {
     position: absolute;
-    text-align: center;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.5s ease-in-out;
-    opacity: 0;
     width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .projectCard:hover .projectCard_txt {
@@ -425,22 +426,27 @@ select:focus {
     letter-spacing: 0.8px;
 }
 
-/**............Contact Component............*/
+/** Contact Section */
 .contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     padding: 80px;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+}
+
+/* ContactLeft Section */
+.contactLeft {
+    margin: 0px 40px 0px 0px;
 }
 
 .contactLeft img {
     width: 100%;
 }
 
+/* ContactRight Section */
 .contactRight {
-    width: 60%;
-    margin-left: 40px;
+    width: 70%;
 }
 
 .contactRight_Top h2 {
@@ -459,15 +465,16 @@ select:focus {
     margin: 0 0 8px 0;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease-in-out;
+    resize: none;
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
-    transition: 0.3s ease-in-out;
 }
 
 .contactRight_Content form input:focus,
 .contactRight_Content form textarea:focus {
-    background: rgba(255, 255, 255, 1);
     color: #121212;
+    background: rgba(255, 255, 255, 1);
 }
 
 .contactRight_Content form input::placeholder,
@@ -479,8 +486,8 @@ select:focus {
 
 .contactRight_Content form input:focus::placeholder,
 .contactRight_Content form textarea:focus::placeholder {
-    color: #121212;
     opacity: 0.8;
+    color: #121212;
 }
 
 .contactRight_Content form button {
@@ -488,16 +495,16 @@ select:focus {
     font-size: 16px;
     font-weight: 600;
     padding: 15px 40px;
-    margin-top: 20px;
-    color: #000;
-    background-color: #fff;
+    margin: 20px 0px 0px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    color: #000;
+    background-color: #fff;
 }
 
 .contactRight_Content form button span {
-    z-index: 1;
     position: relative;
+    z-index: 1;
 }
 
 .contactRight_Content form button:hover {
@@ -511,27 +518,28 @@ select:focus {
     left: 0;
     width: 0;
     height: 100%;
-    background: #121212;
     z-index: 0;
     transition: 0.3s ease-in-out;
+    background-color: #121212;
 }
 
 .contactRight_Content form button:hover::before {
     width: 100%;
 }
 
-/**............Footer Component............*/
+/** Footer Section */
 .footer {
-    background-image: url('./Assets/img/Footer/footerBg.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
+    background-image: url('./Assets/img/Footer/footerBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
+/* FooterLeft Section */
 .footerLeft {
     width: fit-content;
     height: fit-content;
@@ -542,6 +550,7 @@ select:focus {
     height: 82px;
 }
 
+/* FooterRight Section */
 .footerRight {
     display: flex;
     align-items: flex-end;
@@ -557,10 +566,10 @@ select:focus {
 .footerRight .socialIcons a {
     width: 42px;
     height: 42px;
-    line-height: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(217, 217, 217, 0.1);
@@ -568,13 +577,13 @@ select:focus {
 
 .footerRight .socialIcons a::before {
     content: "";
+    position: absolute;
+    transform: scale(0);
     width: 42px;
     height: 42px;
-    position: absolute;
-    background-color: var(--white-color);
     border-radius: 50%;
-    transform: scale(0);
     transition: 0.3s ease-in-out;
+    background-color: var(--white-color);
 }
 
 .footerRight .socialIcons a:hover::before {
@@ -600,196 +609,357 @@ select:focus {
     color: #B8B8B8;
 }
 
-/** ...................Responsive Media Queries.................... */
-@media screen and (max-width: 990px) {
+/** Responsive Media Queries Section */
+@media screen and (max-width: 1200px) {
 
-    /**............Navbar Component............*/
-    .navbar,
-    .hidden {
-        display: none;
+    /** Navbar Section */
+    .navbar {
+        padding: 10px 60px;
     }
 
-    .navbarSml {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 40px;
-        transition: 0.2s ease-in-out;
-        z-index: 9999;
+    /* NavbarLeft Section */
+    .navbarLeft img {
+        width: 48px;
+        height: 48px;
     }
 
-    .navbarSml #logo,
-    .navbarSml #navmenu {
-        width: 64px;
-        height: 64px;
+    .navbarLeft p {
+        font-size: 22px;
+        margin-left: 8px;
     }
 
-    .navbarSmlContent.visible {
-        width: 100%;
-        position: fixed;
-        top: 75px;
-        padding: 0 55px 10px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        transition: 0.2s ease-in-out;
-        z-index: 9998;
+    /* NavbarMiddle Section */
+    .navbarMiddle a {
+        padding: 0 15px;
     }
 
-    .navbarSmlContent.visible a {
-        letter-spacing: 0.8px;
-        padding: 5px 0;
-        opacity: 0.5;
-        color: var(--white-color);
+    /* NavbarRight Section */
+    .navbarRight img {
+        width: 48px;
+        height: 48px;
     }
 
-    .navbarSmlContent.visible a:hover,
-    .navbarSmlContent.visible a.active {
-        opacity: 1;
+    .navbarRight p {
+        font-size: 22px;
+        margin-left: 8px;
     }
 
-    /**............Home Component............*/
+    /** Home Section */
     .home {
-        padding: 200px 40px 140px 40px;
+        padding: 180px 60px 100px 60px;
     }
 
+    /* HomeLeft Section */
     .homeLeft #tagline {
-        font-size: 16px;
-        padding: 8px 16px;
+        font-size: 18px;
+        padding: 10px 12px;
         margin-bottom: 15px;
     }
 
     .homeLeft h1 {
-        font-size: 36px;
-        line-height: 1.1;
+        font-size: 48px;
         margin-bottom: 15px;
     }
 
     .homeLeft p {
-        line-height: 1.1em;
+        line-height: 1.3em;
     }
 
-    /**............Skill Component............*/
+    /** Skill Section */
+    .skill {
+        padding: 60px 0;
+    }
+
     .skill_Box {
-        padding: 40px;
-        margin: 0 40px;
+        padding: 20px;
+        margin: 0 60px;
     }
 
     .skill_Box p {
-        line-height: 1.2em;
-        margin: 15px 60px 40px 60px;
+        margin: 15px 120px 60px 120px;
     }
 
-    .skill_Box .skill_Slider {
-        width: 100%;
-    }
-
-    .circularBar .progressCircle {
-        width: 160px;
-        height: 160px;
-    }
-
-    /**............Projects Component............*/
+    /** Project Section */
     .project {
-        padding: 80px 40px;
+        padding: 60px;
     }
 
+    /* ProjectTop Section */
     .projectTop p {
-        line-height: 1.2em;
-        margin: 15px 60px 0 60px;
+        margin: 15px 120px 0 120px;
     }
 
+    /* ProjectMiddle Section */
     .projectMiddle {
         width: 70%;
         margin: 30px auto;
     }
 
-    .projectMiddle p {
-        font-size: 14px;
-        padding: 12px 0;
-    }
-
+    /* ProjectBottom Section */
     .projectBottom_Content {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
-    /**............Contact Component............*/
+    /** Contact Section */
     .contact {
-        padding: 80px 40px;
+        padding: 60px;
     }
 
-    .contactLeft {
-        width: 50%;
-    }
-
-    .contactRight {
-        width: 50%;
-        margin-left: 20px;
-    }
-
+    /* ContactRight Section */
     .contactRight_Top h2 {
         margin-bottom: 20px;
     }
 
-    .contactRight_Content form input {
-        width: 50%;
-        font-size: 16px;
-        padding: 10px 15px;
+    .contactRight_Content form button {
+        margin: 15px 0px 0px;
     }
 
+    /** Footer Section */
+    .footer {
+        padding: 20px 60px;
+    }
+
+    /* FooterLeft Section */
+    .footerLeft img {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* FooterRight Section */
+    .footerRight .socialIcons a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .footerRight .socialIcons a::before {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    /** Navbar Section */
+    .navbar {
+        padding: 10px 40px;
+    }
+
+    /* NavbarLeft Section */
+    .navbarLeft img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbarLeft p {
+        font-size: 20px;
+        margin-left: 6px;
+    }
+
+    /* NavbarMiddle Section */
+    .navbarMiddle a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* NavbarRight Section */
+    .navbarRight img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbarRight p {
+        font-size: 20px;
+        margin-left: 6px;
+    }
+
+    /** Home Section */
+    .home {
+        padding: 200px 40px 140px 40px;
+    }
+
+    /* HomeLeft Section */
+    .homeLeft #tagline {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-bottom: 12px;
+    }
+
+    .homeLeft h1 {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .homeLeft p {
+        font-size: 14px;
+        line-height: 1.2em;
+    }
+
+    /** Skill Section */
+    .skill {
+        padding: 40px 0;
+    }
+
+    .skill_Box {
+        padding: 20px;
+        margin: 0 40px;
+    }
+
+    .skill_Box h2 {
+        font-size: 36px;
+    }
+
+    .skill_Box p {
+        margin: 15px 80px 40px 80px;
+    }
+
+    /** Project Section */
+    .project {
+        padding: 40px;
+    }
+
+    /* ProjectTop Section */
+    .projectTop h2 {
+        font-size: 36px;
+    }
+
+    .projectTop p {
+        margin: 15px 80px 0 80px;
+    }
+
+    /* ProjectMiddle Section */
+    .projectMiddle {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .projectMiddle p {
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+
+    /** Contact Section */
+    .contact {
+        padding: 40px;
+    }
+
+    /* ContactLeft Section */
+    .contactLeft {
+        width: 75%;
+        margin: 0px 30px 0px 0px;
+    }
+
+    /* ContactRight Section */
+    .contactRight_Top h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .contactRight_Content form input,
     .contactRight_Content form textarea {
-        width: 100%;
-        font-size: 16px;
-        padding: 10px 15px;
+        font-size: 14px;
+        padding: 12px;
+        margin: 0 0 6px 0;
     }
 
     .contactRight_Content form button {
-        padding: 10px 40px;
-        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 20px;
+        margin: 10px 0px 0px;
     }
 
-    /**............Footer Component............*/
+    /** Footer Section */
     .footer {
         padding: 20px 40px;
     }
 
-    .footerRight {
-        align-items: flex-end;
-    }
-
-    .footerRight p {
-        margin-top: 10px;
-        text-align: end;
-    }
-}
-
-@media screen and (max-width: 790px) {
-
-    /**............Navbar Component............*/
-    .navbarSml {
-        padding: 20px;
-    }
-
-    .navbarSml #logo,
-    .navbarSml #navmenu {
+    /* FooterLeft Section */
+    .footerLeft img {
         width: 56px;
         height: 56px;
     }
 
-    .navbarSmlContent.visible {
-        top: 85px;
-        padding: 0 35px 10px 0;
+    /* FooterRight Section */
+    .footerRight p {
+        font-size: 12px;
+        margin-top: 10px;
     }
 
-    /**............Home Component............*/
+    .footerRight .socialIcons a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footerRight .socialIcons a::before {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    /** Navbar Section */
+    .navbar {
+        display: none;
+    }
+
+    /** NavbarSml Section */
+    .navbarSml {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        transition: 0.2s ease-in-out;
+        z-index: 9;
+    }
+
+    .navbarSml #logo,
+    .navbarSml #navmenu {
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+
+    .navbarSmlContent.visible {
+        position: fixed;
+        top: 68px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0 20px 10px 0;
+        transition: 0.2s ease-in-out;
+        z-index: 8;
+    }
+
+    .navbarSmlContent.visible a,
+    .navbarSmlContent.visible button {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+        margin: 5px 0;
+        opacity: 0.5;
+        cursor: pointer;
+        color: var(--white-color);
+    }
+
+    .navbarSmlContent.visible a:hover,
+    .navbarSmlContent.visible a.active,
+    .navbarSmlContent.visible button:hover {
+        opacity: 1;
+    }
+
+    /** Home Section */
     .home {
         flex-direction: column;
         padding: 140px 20px 20px;
     }
 
+    /* HomeLeft Section */
     .homeLeft {
         width: 100%;
         text-align: center;
@@ -812,6 +982,7 @@ select:focus {
         line-height: 1.2em;
     }
 
+    /* HomeRight Section */
     .homeRight {
         width: 80%;
         margin-top: 20px;
@@ -835,82 +1006,204 @@ select:focus {
         }
     }
 
-    /**............Skill Component............*/
+    /** Skill Section */
+    .skill {
+        padding: 20px 0;
+    }
+
     .skill_Box {
         padding: 20px;
         margin: 0 20px;
     }
 
     .skill_Box p {
-        line-height: 1.2em;
-        margin: 15px 0 40px 0;
+        margin: 10px 40px 20px 40px;
     }
 
-    /**............Projects Component............*/
+    /** Project Section */
     .project {
-        padding: 80px 20px;
+        padding: 20px;
     }
 
+    /* ProjectTop Section */
     .projectTop p {
-        line-height: 1.2em;
-        margin: 15px 0 0 0;
+        margin: 10px 40px 0 40px;
     }
 
-    .projectMiddle {
-        width: 100%;
-        margin: 30px 0;
-    }
-
+    /* ProjectMiddle Section */
     .projectMiddle p {
         font-size: 12px;
-        padding: 10px 0;
+        padding: 8px 0px;
     }
 
+    /* ProjectBottom Section */
     .projectBottom_Content {
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
-    /**............Contact Component............*/
+    /** Contact Section */
     .contact {
-        text-align: center;
         flex-direction: column-reverse;
-        padding: 80px 20px;
+        padding: 20px;
     }
 
+    /* ContactLeft Section */
     .contactLeft {
-        width: 100%;
-        margin-top: 40px;
+        width: 80%;
+        margin: 0px;
     }
 
+    /* ContactRight Section */
     .contactRight {
         width: 100%;
-        margin: 0;
     }
 
     .contactRight_Top h2 {
+        text-align: center;
+        font-size: 36px;
         margin-bottom: 10px;
     }
 
-    .contactRight_Content form button {
-        padding: 10px 40px;
-        margin-top: 10px;
+    .contactRight_Content form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
-    /**............Footer Component............*/
+    .contactRight_Content form input,
+    .contactRight_Content form textarea {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .contactRight_Content form button {
+        font-size: 12px;
+        padding: 10px 30px;
+        margin: 5px 0px 15px;
+    }
+
+    /** Footer Section */
     .footer {
         padding: 20px;
     }
 
-    .footerRight {
-        width: 40%;
+    /* FooterLeft Section */
+    .footerLeft img {
+        width: 46px;
+        height: 46px;
+    }
+
+    /* FooterRight Section */
+    .footerRight p {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .footerRight .socialIcons a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footerRight .socialIcons a::before {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /** NavbarSml Section */
+    .navbarSml #logo,
+    .navbarSml #navmenu {
+        width: 36px;
+        height: 36px;
+    }
+
+    .navbarSmlContent.visible {
+        top: 56px;
+    }
+
+    /** Home Section */
+    /* HomeLeft Section */
+    .homeLeft #tagline {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .homeLeft h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /** Skill Section */
+    .skill_Box {
+        padding: 10px;
+    }
+
+    .skill_Box p {
+        text-align: justify;
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    /** Project Section */
+    /* ProjectTop Section */
+    .projectTop p {
+        text-align: justify;
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    /* ProjectMiddle Section */
+    .projectMiddle {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .projectMiddle p {
+        font-size: 10px;
+        padding: 8px 0px;
+    }
+
+    /* ProjectBottom Section */
+    .projectBottom_Content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    /** Footer Section */
+    .footer {
+        padding: 20px;
+    }
+
+    /* FooterLeft Section */
+    .footerLeft img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* FooterRight Section */
+    .footerRight p {
+        font-size: 10px;
+        margin-top: 6px;
     }
 
     .footerRight .socialIcons {
-        gap: 6px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
     }
-    
+
     .footerRight .socialIcons a {
-        width: 36px;
-        height: 36px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .footerRight .socialIcons a::before {
+        width: 26px;
+        height: 26px;
     }
 }

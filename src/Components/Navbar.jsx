@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../Assets/img/Logo/logo.png';
+import resume from '../Assets/img/Navbar/resume.png';
 import navmenu from '../Assets/img/Navbar/navMenu.png';
 
 function Navbar({ scrollToHome, scrollToSkill, scrollToProject, scrollToContact }) {
@@ -55,8 +56,9 @@ function Navbar({ scrollToHome, scrollToSkill, scrollToProject, scrollToContact 
                     </a>
                 </div>
 
-                <div className='navbarRight'>
-                    <button onClick={openPdf}>Resume</button>
+                <div className='navbarRight' onClick={openPdf}>
+                    <img src={resume} alt="Cvlogo" />
+                    <p>Resume</p>
                 </div>
             </div>
 
