@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.27273536.css",
-    "main.js": "/Portfolio/static/js/main.87eb22e2.js",
+    "main.css": "/Portfolio/static/css/main.45f33e2c.css",
+    "main.js": "/Portfolio/static/js/main.0e9d7bcf.js",
     "static/media/movies_landingPage.PNG": "/Portfolio/static/media/movies_landingPage.7e64db63e780bd531ed1.PNG",
     "static/media/shiping_website.PNG": "/Portfolio/static/media/shiping_website.bb4f5e2ffa5030a7182b.PNG",
     "static/media/weatherApp.PNG": "/Portfolio/static/media/weatherApp.4a8cfcd1928dc2a81dad.PNG",
@@ -21,11 +21,11 @@
     "static/media/linkedIn.svg": "/Portfolio/static/media/linkedIn.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/facebook.svg": "/Portfolio/static/media/facebook.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.27273536.css.map": "/Portfolio/static/css/main.27273536.css.map",
-    "main.87eb22e2.js.map": "/Portfolio/static/js/main.87eb22e2.js.map"
+    "main.45f33e2c.css.map": "/Portfolio/static/css/main.45f33e2c.css.map",
+    "main.0e9d7bcf.js.map": "/Portfolio/static/js/main.0e9d7bcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.27273536.css",
-    "static/js/main.87eb22e2.js"
+    "static/css/main.45f33e2c.css",
+    "static/js/main.0e9d7bcf.js"
   ]
 }
