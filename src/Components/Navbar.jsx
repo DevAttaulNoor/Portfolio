@@ -9,7 +9,7 @@ function Navbar({ scrollToHome, scrollToSkill, scrollToProject, scrollToContact 
     const [navbarSmlContentVisible, setNavbarSmlContentVisible] = useState(false);
 
     const openPdf = () => {
-        window.open('https://drive.google.com/file/d/1-7j_do-rUNbbAgmfItI7Vryikt4LjxQ3/view?usp=sharing', '_blank');
+        window.open('https://drive.google.com/file/d/1H1Jw8Etlc_TYv_36DSFq5uLurhseEqHU/view?usp=sharing', '_blank');
     };
 
     const onUpdateActiveLink = (value) => {

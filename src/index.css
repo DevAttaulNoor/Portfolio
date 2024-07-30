@@ -76,7 +76,7 @@ select:focus {
     align-items: center;
     justify-content: space-between;
     padding: 10px 80px;
-    z-index: 9;
+    z-index: 20;
     transition: 0.3s ease-in-out;
 }
 
@@ -915,7 +915,7 @@ select:focus {
         justify-content: space-between;
         padding: 10px 20px;
         transition: 0.2s ease-in-out;
-        z-index: 9;
+        z-index: 20;
     }
 
     .navbarSml #logo,
