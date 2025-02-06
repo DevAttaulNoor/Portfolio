@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "company": "syhtek software solutions",
+        "address": "74600, Block A, North Nazimabad, Karachi, Karachi, Karachi City, Sindh",
+        "designation": [
+            {
+                "title": "Junior Frontend Developer",
+                "time": {
+                    "from": "Sep 2024",
+                    "to": "Oct 2024"
+                },
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi excepturi nemo ad reprehenderit accusantium quos dolore dolorem explicabo ex at."
+            },
+            {
+                "title": "Mid Frontend Developer",
+                "time": {
+                    "from": "Oct 2024",
+                    "to": "Jan 2025"
+                },
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi excepturi nemo ad reprehenderit accusantium quos dolore dolorem explicabo ex at."
+            }
+        ]
+    }
+]
