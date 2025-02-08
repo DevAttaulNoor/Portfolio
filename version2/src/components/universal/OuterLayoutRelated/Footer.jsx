@@ -1,37 +1,17 @@
 import { Link, NavLink } from "react-router"
 import { Routes } from "../../../constants/Routes"
 import { ReactIcons } from "../../../constants/ReactIcons"
+import { SkillInfinteCarousel } from "../Carousel/SkillInfinteCarousel"
 import SocialLinkData from "../../../assets/data/SocialLinks.json"
-import SkillsData from "../../../assets/data/Skills.json"
 import NavlinksData from "../../../assets/data/NavLinks.json"
 import PersonalInfoData from "../../../assets/data/PersonalInfo.json"
-import { Carousel } from "../Carousel/Carousel"
 
 export const Footer = () => {
     const year = new Date().getFullYear()
 
     return (
-        <div className="flex flex-col">
-            <Carousel
-                speed={3500}
-                pagination={false}
-                autoplay={{ delay: 1 }}
-                SwiperContainerClass="infinteCarousel w-full !py-3 bg-customPurple-100"
-            >
-                {SkillsData.map((data) => (
-                    <div
-                        key={data.id}
-                        className="flex items-center justify-around"
-                    >
-                        <span className="text-3xl text-white">
-                            {ReactIcons.STAR}
-                        </span>
-                        <p className="text-center text-2xl font-medium text-white">
-                            {data.text}
-                        </p>
-                    </div>
-                ))}
-            </Carousel>
+        <div className="flex flex-col overflow-hidden">
+            <SkillInfinteCarousel />
 
             <footer className="relative mx-auto grid w-full max-w-innerContainer grid-cols-5 gap-20 px-3 py-2 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-6 xl:py-8 2xl:py-10">
                 <div className="col-span-2 flex flex-col gap-3">

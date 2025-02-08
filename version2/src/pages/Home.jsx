@@ -1,6 +1,4 @@
 import { HeroSection } from "../components/HomePageRelated/HeroSection"
-import { Carousel } from "../components/universal/Carousel/Carousel"
-import { ReactIcons } from "../constants/ReactIcons"
 import { InnerLayout } from "../layouts/InnerLayout"
 import { EducationSection } from "../components/HomePageRelated/EducationSection"
 import { WorkSection } from "../components/HomePageRelated/WorkSection"
@@ -9,35 +7,14 @@ import { DetailSectionLayout } from "../layouts/DetailSectionLayout"
 import { ImageSection } from "../components/universal/DetailSectionRelated/ImageSection"
 import { DetailSection } from "../components/universal/DetailSectionRelated/DetailSection"
 import { ContactSection } from "../components/HomePageRelated/ContactSection"
-import SkillsData from "../assets/data/Skills.json"
+import { SkillInfinteCarousel } from "../components/universal/Carousel/SkillInfinteCarousel"
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
             <HeroSection />
 
-            <section className="basicSpaceBtwSectionStyle w-full bg-customPurple-100 py-3">
-                <Carousel
-                    speed={3500}
-                    pagination={false}
-                    autoplay={{ delay: 1 }}
-                    SwiperContainerClass="infinteCarousel"
-                >
-                    {SkillsData.map((data) => (
-                        <div
-                            key={data.id}
-                            className="flex items-center justify-around"
-                        >
-                            <span className="text-3xl text-white">
-                                {ReactIcons.STAR}
-                            </span>
-                            <p className="text-center text-2xl font-medium text-white">
-                                {data.text}
-                            </p>
-                        </div>
-                    ))}
-                </Carousel>
-            </section>
+            <SkillInfinteCarousel />
 
             <InnerLayout>
                 {/* About Me Section */}
@@ -80,3 +57,5 @@ export const Home = () => {
         </>
     )
 }
+
+export default Home

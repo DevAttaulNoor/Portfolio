@@ -11,7 +11,7 @@
     },
     {
         "id": 3,
-        "text": "TailwindCss",
+        "text": "Tailwind",
         "logo": "/images/skills/tailwind.png"
     },
     {
@@ -30,7 +30,7 @@
     },
     {
         "id": 7,
-        "text": "Framer Motion",
+        "text": "Motion",
         "logo": "/images/skills/framer.png"
     },
     {
@@ -51,5 +51,13 @@
         "id": 11,
         "text": "Git",
         "logo": "/images/skills/git.png"
+    },
+    {
+        "id": 12,
+        "text": "Firebase"
+    },
+    {
+        "id": 13,
+        "text": "Redux"
     }
 ]

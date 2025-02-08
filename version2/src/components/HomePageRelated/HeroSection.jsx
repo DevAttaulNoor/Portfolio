@@ -1,6 +1,8 @@
 import { ReactIcons } from "../../constants/ReactIcons"
 import { Svgs } from "../../constants/Svgs"
 import { PrimaryBtn } from "../universal/Buttons/PrimaryBtn"
+import { motion } from "motion/react"
+
 
 export const HeroSection = () => {
     return (
@@ -35,7 +37,12 @@ export const HeroSection = () => {
             </div>
 
             <div className="relative">
-                <span>{Svgs.HEROSECTION_BLOB({ className: "w-[520px]" })}</span>
+                <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 10, repeat: Infinity, ease: "linear", }}
+                >
+                    {Svgs.HEROSECTION_BLOB({ className: "w-[520px]" })}
+                </motion.div>
 
                 <div className="absolute left-1/2 top-1/2 w-[32rem] -translate-x-1/2 -translate-y-1/2 object-contain">
                     <img

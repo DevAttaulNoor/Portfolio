@@ -1,13 +1,11 @@
-import { ReactIcons } from "@constants/ReactIcons"
-import { Carousel } from "@components/universal/Carousel/Carousel"
 import { MainTitle } from "@components/universal/Titles/MainTitle"
 import { ProjectCard } from "@components/HomePageRelated/ProjectCard"
 import { ContactSection } from "@components/HomePageRelated/ContactSection"
 import { DetailSection } from "@components/universal/DetailSectionRelated/DetailSection"
+import { SkillInfinteCarousel } from "@components/universal/Carousel/SkillInfinteCarousel"
 import projectData from "../assets/data/Projects.json"
-import SkillsData from "../assets/data/Skills.json"
 
-export const Projects = () => {
+const Projects = () => {
     return (
         <>
             <section className="w-full text-center px-3 my-6 sm:px-6 sm:my-10 md:px-8 md:my-12 lg:px-10 lg:my-14 xl:my-16 2xl:my-[72px]">
@@ -48,30 +46,11 @@ export const Projects = () => {
                 </div>
             </section>
 
-            <section className="basicSpaceBtwSectionStyle w-full bg-customGreen-default py-3">
-                <Carousel
-                    speed={3500}
-                    pagination={false}
-                    autoplay={{ delay: 1 }}
-                    SwiperContainerClass="infinteCarousel"
-                >
-                    {SkillsData.map((data) => (
-                        <div
-                            key={data.id}
-                            className="flex items-center justify-around"
-                        >
-                            <span className="text-3xl">
-                                {ReactIcons.STAR}
-                            </span>
-                            <p className="text-center text-2xl font-medium">
-                                {data.text}
-                            </p>
-                        </div>
-                    ))}
-                </Carousel>
-            </section>
+            <SkillInfinteCarousel />
 
             <ContactSection />
         </>
     )
 }
+
+export default Projects

@@ -1,23 +1,22 @@
-import { Suspense } from "react"
 import {
     createBrowserRouter,
     RouterProvider,
     useRouteError,
 } from "react-router-dom"
+import { lazy, Suspense } from "react"
 import { Routes } from "./constants/Routes"
-import { OuterLayout } from "./layouts/OuterLayout"
-
 import { Error } from "./pages/general/Error"
 import { Loading } from "./pages/general/Loading"
-import { Home } from "./pages/Home"
-import { Skills } from "./pages/Skills"
-import { Experience } from "./pages/Experience"
-import { Projects } from "./pages/Projects"
-import { Contact } from "./pages/Contact"
+import { OuterLayout } from "./layouts/OuterLayout"
+
+const Home = lazy(() => import("./pages/Home"))
+const Skills = lazy(() => import("./pages/Skills"))
+const Experience = lazy(() => import("./pages/Experience"))
+const Projects = lazy(() => import("./pages/Projects"))
+const Contact = lazy(() => import("./pages/Contact"))
 
 const ErrorBoundary = () => {
     const errorData = useRouteError()
-    console.log(errorData)
     return (
         <OuterLayout>
             <Error errorData={errorData} />
