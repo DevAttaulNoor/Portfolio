@@ -2,9 +2,9 @@ import { Carousel } from "./Carousel"
 import { ReactIcons } from "../../../constants/ReactIcons"
 import SkillsData from "../../../assets/data/Skills.json"
 
-export const SkillInfinteCarousel = () => {
+export const SkillInfinteCarousel = ({ additionalStyleClass = '' }) => {
     return (
-        <section className="basicSpaceBtwSectionStyle w-full bg-customGreen-default py-4">
+        <section className={`${additionalStyleClass} w-full bg-customGreen-default py-4`}>
             <Carousel
                 speed={3500}
                 pagination={false}
@@ -25,6 +25,6 @@ export const SkillInfinteCarousel = () => {
                     </div>
                 ))}
             </Carousel>
-        </section>
+        </section >
     )
 }

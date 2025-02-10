@@ -14,7 +14,7 @@ const Home = () => {
         <>
             <HeroSection />
 
-            <SkillInfinteCarousel />
+            <SkillInfinteCarousel additionalStyleClass="basicSpaceBtwSectionStyle" />
 
             <InnerLayout>
                 {/* About Me Section */}
