@@ -45,6 +45,6 @@
     }
 
     .navlinkStyle {
-        @apply relative w-fit cursor-pointer before:absolute before:-bottom-[2px] before:left-0 before:h-[2px] before:w-0 before:bg-customGreen-default before:transition-all before:duration-300 before:ease-in-out before:hover:w-full after:absolute after:bottom-0 after:left-0 after:h-0 after:w-full after:delay-500 after:bg-customGreen-default after:transition-all after:duration-500 after:ease-in-out after:-z-10 after:hover:h-full;
+        @apply relative w-fit cursor-pointer before:absolute before:-bottom-[2px] before:left-0 before:h-[2px] before:w-0 before:bg-customGreen-default before:transition-all before:duration-300 before:ease-in-out after:absolute after:bottom-0 after:left-0 after:-z-10 after:h-0 after:w-full after:bg-customGreen-default after:transition-all after:delay-500 after:duration-500 after:ease-in-out before:hover:w-full after:hover:h-full;
     }
 }

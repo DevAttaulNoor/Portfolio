@@ -13,6 +13,7 @@ const Home = lazy(() => import("./pages/Home"))
 const Skills = lazy(() => import("./pages/Skills"))
 const Experience = lazy(() => import("./pages/Experience"))
 const Projects = lazy(() => import("./pages/Projects"))
+const ProjectInner = lazy(() => import("./pages/ProjectInner"))
 const Contact = lazy(() => import("./pages/Contact"))
 
 const ErrorBoundary = () => {
@@ -33,6 +34,7 @@ const routes = createBrowserRouter([
             { path: Routes.SKILLS.path, element: <Skills /> },
             { path: Routes.EXPERIENCE.path, element: <Experience /> },
             { path: Routes.PROJECTS.path, element: <Projects /> },
+            { path: Routes.PROJECT_INNER.path, element: <ProjectInner /> },
             { path: Routes.CONTACT.path, element: <Contact /> },
         ],
     },

@@ -4,222 +4,271 @@
         "title": "Calculator",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             }
         ],
         "description": "This is a simple calculator that can be used to calculate simple mathematics.",
-        "link": "https://devattaulnoor.github.io/Calculator/",
         "images": [
             {
                 "src": "/images/projects/calculator.PNG",
-                "alt": "screenshoot of my project named calculator"
+                "alt": "screenshot of my project named calculator"
             }
-        ]
+        ],
+        "path": "/projects/calculator",
+        "link": "https://devattaulnoor.github.io/Calculator/"
     },
     {
         "id": 2,
         "title": "Weather App",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             }
         ],
-        "description": "This Weather Website is a user-friendly platform that leverages the OpenWeatherMap API to provide real-time weather information for various cities worldwide. Users can easily access current weather conditions, and detailed information for any desired location.",
-        "link": "https://devattaulnoor.github.io/WeatherApp/",
+        "description": "This Weather Website is a user-friendly platform that leverages the OpenWeatherMap API to provide real-time weather information.",
         "images": [
             {
                 "src": "/images/projects/weatherApp.PNG",
-                "alt": "screenshoot of my project named Weather app"
+                "alt": "screenshot of my project named Weather App"
             }
-        ]
+        ],
+        "path": "/projects/weather-app",
+        "link": "https://devattaulnoor.github.io/WeatherApp/"
     },
     {
         "id": 3,
         "title": "Movie Showcasing",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             }
         ],
-        "description": "This project showcases a sleek and interactive landing page for movie enthusiasts. With a focus on user experience, we've crafted a dynamic layout using HTML, CSS, and JavaScript to display a banner featuring some of the movies along with some information.",
-        "link": "https://devattaulnoor.github.io/Movies_LandingPage/",
+        "description": "This project showcases a sleek and interactive landing page for movie enthusiasts.",
         "images": [
             {
                 "src": "/images/projects/movies_landingPage.PNG",
-                "alt": "screenshoot of my project named Movie Showcasing"
+                "alt": "screenshot of my project named Movie Showcasing"
             }
-        ]
+        ],
+        "path": "/projects/movie-showcasing",
+        "link": "https://devattaulnoor.github.io/Movies_LandingPage/"
     },
     {
         "id": 4,
         "title": "Shipping WebApp",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
-                "name": "Bootstrap"
+                "name": "Bootstrap",
+                "logo": "/images/skills/bootstrap.png"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             }
         ],
         "description": "This shipping website is designed to facilitate services provided by the company. It has been developed using HTML, CSS, Bootstrap and JavaScript, emphasizing responsiveness and simplicity.",
-        "link": "https://devattaulnoor.github.io/MDL_Website",
         "images": [
             {
                 "src": "/images/projects/shiping_website.PNG",
                 "alt": "screenshoot of my project named Shipping WebApp"
             }
-        ]
+        ],
+        "path": "/projects/shipping-webapp",
+        "link": "https://devattaulnoor.github.io/MDL_Website"
     },
     {
         "id": 5,
         "title": "Ecommerce Webapp",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             }
         ],
         "description": "This Ecommerce website is designed to facilitate product viewing, multipage navigation, order placement, and cart functionality. It has been developed using HTML, CSS, and JavaScript, emphasizing responsiveness and simplicity.",
-        "link": "https://devattaulnoor.github.io/ECom_Website/",
         "images": [
             {
                 "src": "/images/projects/ecom_website.PNG",
                 "alt": "screenshoot of my project named Ecommerce Webapp"
             }
-        ]
+        ],
+        "path": "/projects/ecommerce-webapp",
+        "link": "https://devattaulnoor.github.io/ECom_Website/"
     },
     {
         "id": 6,
         "title": "Signup Form Webapp",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
-                "name": "TailwindCss"
+                "name": "Tailwind",
+                "logo": "/images/skills/tailwind.png"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             },
             {
-                "name": "ReactJs"
+                "name": "ReactJs",
+                "logo": "/images/skills/react.png"
             },
             {
-                "name": "Redux Toolkit"
+                "name": "Git",
+                "logo": "/images/skills/git.png"
             },
             {
                 "name": "Firebase"
+            },
+            {
+                "name": "Redux"
             }
         ],
         "description": "This is a simple React web application that demonstrates user authentication using Firebase Authentication. Users can sign up, log in, change their profile picture, and log out.",
-        "link": "https://devattaulnoor.github.io/signup_form",
         "images": [
             {
                 "src": "/images/projects/ecom_website.PNG",
                 "alt": "screenshoot of my project named Signup Form Webapp"
             }
-        ]
+        ],
+        "path": "/projects/signup-form-webapp",
+        "link": "https://devattaulnoor.github.io/signup_form"
     },
     {
         "id": 7,
         "title": "Facebook Clone",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
                 "name": "MaterialUi"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             },
             {
-                "name": "ReactJs"
+                "name": "ReactJs",
+                "logo": "/images/skills/react.png"
             },
             {
-                "name": "Redux Toolkit"
+                "name": "Git",
+                "logo": "/images/skills/git.png"
             },
             {
                 "name": "Firebase"
+            },
+            {
+                "name": "Redux"
             }
         ],
         "description": "The Facebook Clone project is a web application created using the React.js library and integrated with Firebase services. Its purpose is to mimic the fundamental features of Facebook, allowing users to create profiles, like, comment and share on posts, interact with other users, and experience a real-time social networking environment.",
-        "link": "https://devattaulnoor.github.io/FacebookClone-ReactWebsite",
         "images": [
             {
                 "src": "/images/projects/fbclone.PNG",
                 "alt": "screenshoot of my project named Facebook Clone"
             }
-        ]
+        ],
+        "path": "/projects/facebook-clone",
+        "link": "https://devattaulnoor.github.io/FacebookClone-ReactWebsite"
     },
     {
         "id": 8,
         "title": "Whatsapp Clone",
         "tech": [
             {
-                "name": "Html5"
+                "name": "Html5",
+                "logo": "/images/skills/html5.webp"
             },
             {
-                "name": "CSS3"
+                "name": "Css3",
+                "logo": "/images/skills/css3.webp"
             },
             {
                 "name": "MaterialUi"
             },
             {
-                "name": "Javascript"
+                "name": "Javascript",
+                "logo": "/images/skills/javascript.png"
             },
             {
-                "name": "ReactJs"
+                "name": "ReactJs",
+                "logo": "/images/skills/react.png"
             },
             {
-                "name": "Redux Toolkit"
+                "name": "Git",
+                "logo": "/images/skills/git.png"
             },
             {
                 "name": "Firebase"
+            },
+            {
+                "name": "Redux"
             }
         ],
         "description": "The Facebook Clone project is a web application created using the React.js library and integrated with Firebase services. Its purpose is to mimic the fundamental features of Facebook, allowing users to create profiles, like, comment and share on posts, interact with other users, and experience a real-time social networking environment.",
-        "link": "https://devattaulnoor.github.io/FacebookClone-ReactWebsite",
         "images": [
             {
                 "src": "/images/projects/fbclone.PNG",
                 "alt": "screenshoot of my project named Facebook Clone"
             }
-        ]
+        ],
+        "path": "/projects/whatsapp-clone",
+        "link": "https://devattaulnoor.github.io/FacebookClone-ReactWebsite"
     }
 ]

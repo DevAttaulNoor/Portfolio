@@ -1,8 +1,7 @@
+import { motion } from "motion/react"
 import { MainTitle } from "@components/universal/Titles/MainTitle"
 import { DetailSection } from "../components/universal/DetailSectionRelated/DetailSection"
 import skillsData from '../assets/data/Skills.json'
-
-import { motion } from "motion/react"
 
 const Skills = () => {
     return (

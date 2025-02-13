@@ -40,6 +40,7 @@ const Projects = () => {
                                 buttonData: data.tech,
                                 title: data.title,
                                 description: data.description,
+                                link: data.path
                             }}
                         />
                     ))}

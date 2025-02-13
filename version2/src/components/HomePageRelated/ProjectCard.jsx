@@ -29,7 +29,7 @@ export const ProjectCard = ({ detailSection, image }) => {
                     {detailSection.description}
                 </p>
 
-                <Link to={"/"}>View details</Link>
+                <Link to={detailSection.link}>View details</Link>
             </div>
         </div>
     )
