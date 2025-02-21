@@ -1,15 +1,12 @@
-import React from 'react'
-import logo from '../Assets/img/Logo/logo.png';
-import socialIcon_Li from "../Assets/img/Footer/SocialIcons/linkedIn.svg";
-import socialIcon_Gh from "../Assets/img/Footer/SocialIcons/github.svg";
-import socialIcon_Fb from "../Assets/img/Footer/SocialIcons/facebook.svg";
+import logo from '/images/universal/icon.png'
+import socialIcon_Li from '../assets/svgs/linkedIn.svg'
+import socialIcon_Fb from '../assets/svgs/facebook.svg'
+import socialIcon_Gh from '../assets/svgs/github.svg'
 
 export const Footer = () => {
     return (
         <div className="footer">
-            <div className="footerLeft">
-                <img src={logo} alt="Logo" />
-            </div>
+            <img src={logo} alt="Logo" className="footerLeft" />
 
             <div className="footerRight">
                 <div className="socialIcons">
@@ -22,5 +19,3 @@ export const Footer = () => {
         </div>
     )
 }
-
-export default Footer;

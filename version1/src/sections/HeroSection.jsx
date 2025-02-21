@@ -1,8 +1,7 @@
-import React, { useState, useEffect, forwardRef, useCallback, useMemo } from 'react';
-import TrackVisibility from 'react-on-screen';
-import homebanner from "../Assets/img/Home/homeSVG.svg";
+import { useState, useEffect, forwardRef, useCallback, useMemo } from 'react';
+import homebanner from "../assets/svgs/heroSection.svg";
 
-export const Home = forwardRef((props, ref) => {
+export const HeroSection = forwardRef((props, ref) => {
     const [text, setText] = useState('');
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -55,15 +54,8 @@ export const Home = forwardRef((props, ref) => {
             </div>
 
             <div className='homeRight'>
-                <TrackVisibility>
-                    {({ isVisible }) =>
-                        <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                            <img src={homebanner} alt="homeBanner" />
-                        </div>}
-                </TrackVisibility>
+                <img src={homebanner} alt="homeBanner" />
             </div>
         </div>
     );
 });
-
-export default Home;

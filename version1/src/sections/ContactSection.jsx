@@ -1,15 +1,14 @@
-import React, { useState, useRef, forwardRef } from 'react';
+import { useState, useRef, forwardRef } from 'react';
 import emailjs from '@emailjs/browser';
-import TrackVisibility from 'react-on-screen';
-import contactSVG from "../Assets/img/Contact/contactSVG.svg";
+import contactHero from '../assets/svgs/contactHero.svg'
 
-export const Contact = forwardRef((props, ref) => {
+export const ContactSection = forwardRef((props, ref) => {
+    const formRef = useRef();
     const [fname, setFname] = useState('');
     const [lname, setLname] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [message, setMessage] = useState('');
-    const formRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,8 +20,8 @@ export const Contact = forwardRef((props, ref) => {
         }
 
         emailjs.sendForm('service_lruy9xa', 'template_jro2edo', formRef.current, {
-                publicKey: 'qAmbbJxm0DfTTKkkU',
-            })
+            publicKey: 'qAmbbJxm0DfTTKkkU',
+        })
             .then(
                 () => {
                     alert('Your message has been sucessfully sent!');
@@ -44,11 +43,7 @@ export const Contact = forwardRef((props, ref) => {
     return (
         <div className='contact' ref={ref}>
             <div className='contactLeft'>
-                <TrackVisibility>
-                    {({ isVisible }) =>
-                        <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactSVG} alt="Contact Us" />
-                    }
-                </TrackVisibility>
+                <img src={contactHero} alt="Contact Us" />
             </div>
 
             <div className='contactRight'>
@@ -114,5 +109,3 @@ export const Contact = forwardRef((props, ref) => {
         </div>
     );
 });
-
-export default Contact

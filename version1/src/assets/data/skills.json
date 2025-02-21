@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "text": "Html5"
+    },
+    {
+        "id": 2,
+        "text": "Css3"
+    },
+    {
+        "id": 3,
+        "text": "Tailwind"
+    },
+    {
+        "id": 4,
+        "text": "Bootstrap"
+    },
+    {
+        "id": 5,
+        "text": "MaterialUi"
+    },
+    {
+        "id": 6,
+        "text": "Animation"
+    },
+    {
+        "id": 7,
+        "text": "Motion"
+    },
+    {
+        "id": 8,
+        "text": "Javascript"
+    },
+    {
+        "id": 9,
+        "text": "ReactJs"
+    },
+    {
+        "id": 10,
+        "text": "NextJs"
+    },
+    {
+        "id": 11,
+        "text": "Git"
+    },
+    {
+        "id": 12,
+        "text": "Firebase"
+    },
+    {
+        "id": 13,
+        "text": "Redux"
+    }
+]
