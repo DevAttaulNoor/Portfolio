@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import logo from "/images/universal/icon.png";
-import resume from '../assets/svgs/resume.svg';
 import navmenu from '../assets/svgs/navMenu.svg';
 
 export const Header = ({ scrollToHome, scrollToSkill, scrollToProject, scrollToContact }) => {
@@ -24,28 +23,24 @@ export const Header = ({ scrollToHome, scrollToSkill, scrollToProject, scrollToC
             id: 4,
             title: 'Contact',
             reflink: scrollToContact,
-        },
+        }
     ];
     const [scrolled, setScrolled] = useState(false);
     const [activeLink, setActiveLink] = useState(headerLinks[0].title);
     const [navbarSmlContentVisible, setNavbarSmlContentVisible] = useState(false);
 
     useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 60);
         };
 
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
         <>
-            <div className={scrolled ? 'navbar scrolled' : 'navbar'}>
+            <div className={`${scrolled && 'scrolled'} navbar`}>
                 <a
                     href={scrollToHome}
                     className='navbarLeft'
@@ -54,7 +49,7 @@ export const Header = ({ scrollToHome, scrollToSkill, scrollToProject, scrollToC
                     <p>DevAun</p>
                 </a>
 
-                <div className='navbarMiddle'>
+                <div className='navbarRight'>
                     {headerLinks.map((data) => (
                         <h5
                             key={data.id}
@@ -64,20 +59,18 @@ export const Header = ({ scrollToHome, scrollToSkill, scrollToProject, scrollToC
                             {data.title}
                         </h5>
                     ))}
-                </div>
 
-                <a
-                    href='https://drive.google.com/file/d/1g0dmt_okr4hj7qP5hBu-NQL4iBK2kWZb/view?usp=sharing'
-                    target='_Blank'
-                    className='navbarRight'
-                >
-                    <img src={resume} alt="Cvlogo" />
-                    <p>Resume</p>
-                </a>
+                    <a
+                        target='_Blank'
+                        href='https://drive.google.com/file/d/1g0dmt_okr4hj7qP5hBu-NQL4iBK2kWZb/view?usp=sharing'
+                    >
+                        <h5>Resume</h5>
+                    </a>
+                </div>
             </div>
 
-            <div className={scrolled ? 'navbarSml scrolled' : 'navbarSml'}>
-                <img src={logo} alt='logo' id='logo' />
+            <div className={`${scrolled && 'scrolled'} navbarSml`}>
+                <img src={logo} alt='logo of AUN' id='logo' />
                 <img src={navmenu} alt='navmenu' id='navmenu' onClick={() => setNavbarSmlContentVisible(!navbarSmlContentVisible)} />
             </div>
 
@@ -93,11 +86,10 @@ export const Header = ({ scrollToHome, scrollToSkill, scrollToProject, scrollToC
                 ))}
 
                 <a
-                    href='https://drive.google.com/file/d/1g0dmt_okr4hj7qP5hBu-NQL4iBK2kWZb/view?usp=sharing'
                     target='_Blank'
-                    className='navbarRight'
+                    href='https://drive.google.com/file/d/1g0dmt_okr4hj7qP5hBu-NQL4iBK2kWZb/view?usp=sharing'
                 >
-                    Resume
+                    <h5>Resume</h5>
                 </a>
             </div>
         </>

@@ -1,54 +1,67 @@
 [
     {
         "id": 1,
-        "text": "Html5"
+        "text": "Html5",
+        "icon": "/images/skills/Html5.png"
     },
     {
         "id": 2,
-        "text": "Css3"
+        "text": "Css3",
+        "icon": "/images/skills/Css3.png"
     },
     {
         "id": 3,
-        "text": "Tailwind"
+        "text": "Tailwind",
+        "icon": "/images/skills/TailwindCss.png"
     },
     {
         "id": 4,
-        "text": "Bootstrap"
+        "text": "Bootstrap",
+        "icon": "/images/skills/Bootstrap.png"
     },
     {
         "id": 5,
-        "text": "MaterialUi"
+        "text": "MaterialUI",
+        "icon": "/images/skills/MaterialUI.png"
     },
     {
         "id": 6,
-        "text": "Animation"
+        "text": "Motion",
+        "icon": "/images/skills/FramerMotion.png"
     },
     {
         "id": 7,
-        "text": "Motion"
+        "text": "Javascript",
+        "icon": "/images/skills/JavaScript.png"
     },
     {
         "id": 8,
-        "text": "Javascript"
+        "text": "ReactJs",
+        "icon": "/images/skills/React.png"
     },
     {
         "id": 9,
-        "text": "ReactJs"
+        "text": "NextJs",
+        "icon": "/images/skills/Nextjs.png"
     },
     {
         "id": 10,
-        "text": "NextJs"
+        "text": "Git",
+        "icon": "/images/skills/Git.png"
     },
     {
         "id": 11,
-        "text": "Git"
+        "text": "Firebase",
+        "icon": "/images/skills/Firebase.png"
     },
     {
         "id": 12,
-        "text": "Firebase"
+        "text": "Redux",
+        "icon": "/images/skills/Redux.png"
     },
     {
         "id": 13,
-        "text": "Redux"
+        "text": "Figma",
+        "icon": "/images/skills/Figma.png"
     }
 ]

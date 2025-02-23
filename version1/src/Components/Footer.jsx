@@ -3,10 +3,15 @@ import socialIcon_Li from '../assets/svgs/linkedIn.svg'
 import socialIcon_Fb from '../assets/svgs/facebook.svg'
 import socialIcon_Gh from '../assets/svgs/github.svg'
 
-export const Footer = () => {
+export const Footer = ({ scrollToHome }) => {
     return (
         <div className="footer">
-            <img src={logo} alt="Logo" className="footerLeft" />
+            <img
+                src={logo}
+                alt="Logo of AUN"
+                onClick={scrollToHome}
+                className="footerLeft"
+            />
 
             <div className="footerRight">
                 <div className="socialIcons">

@@ -7,13 +7,16 @@
   --border-color: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 html {
   max-width: 1920px;
   margin: 0 auto;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #000;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -75,50 +78,42 @@ select:focus {
 
 /** Navbar Section */
 .navbar {
-  position: sticky;
-  top: 0;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 80px;
   z-index: 20;
   transition: 0.3s ease-in-out;
 }
 
-/* NavbarLeft, NavbarRight Section */
-.navbarLeft,
-.navbarRight {
+/* NavbarLeft Section */
+.navbarLeft {
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
 
-.navbarRight {
-  justify-content: end;
-}
-
-.navbarLeft img,
-.navbarRight img {
+.navbarLeft img {
   width: 56px;
   height: 56px;
 }
 
-.navbarLeft p,
-.navbarRight p {
+.navbarLeft p {
   font-size: 24px;
   font-weight: 500;
   color: var(--white-color);
 }
 
-/* NavbarMiddle Section */
-.navbarMiddle {
+/* NavbarRight Section */
+.navbarRight {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
 }
 
-.navbarMiddle h5 {
+.navbarRight h5 {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.8px;
@@ -127,8 +122,8 @@ select:focus {
   color: var(--white-color);
 }
 
-.navbarMiddle h5:hover,
-.navbarMiddle h5.active {
+.navbarRight h5:hover,
+.navbarRight h5.active {
   opacity: 1;
 }
 
@@ -237,6 +232,8 @@ select:focus {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
   margin: 0 auto;
 }
 
@@ -247,7 +244,13 @@ select:focus {
   gap: 4px;
 }
 
-.skill_Slider .skillCard h5 {
+.skillCard img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.skillCard h5 {
   font-size: 16px;
   font-weight: 500;
 }
@@ -477,9 +480,10 @@ select:focus {
   width: fit-content;
   font-size: 16px;
   font-weight: 600;
-  padding: 15px 40px;
-  margin: 20px 0px 0px;
+  padding: 12px 40px;
+  margin-top: 20px;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
   cursor: pointer;
   color: #000;
   background-color: #fff;
@@ -501,6 +505,7 @@ select:focus {
   left: 0;
   width: 0;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   transition: 0.3s ease-in-out;
   background-color: #121212;
@@ -527,6 +532,7 @@ select:focus {
 .footerLeft {
   width: 82px;
   height: 82px;
+  cursor: pointer;
 }
 
 /* FooterRight Section */
@@ -596,24 +602,22 @@ select:focus {
     padding: 10px 60px;
   }
 
-  /* NavbarLeft, NavbarRight Section */
-  .navbarLeft img,
-  .navbarRight img {
+  /* NavbarLeft Section */
+  .navbarLeft img {
     width: 48px;
     height: 48px;
   }
 
-  .navbarLeft p,
-  .navbarRight p {
+  .navbarLeft p {
     font-size: 22px;
   }
 
-  /* NavbarMiddle Section */
-  .navbarMiddle {
+  /* NavbarRight Section */
+  .navbarRight {
     gap: 24px;
   }
 
-  .navbarMiddle h5 {
+  .navbarRight h5 {
     font-size: 16px;
   }
 
@@ -646,6 +650,12 @@ select:focus {
 
   .skill p {
     margin: 15px 120px 60px 120px;
+  }
+
+  .skillCard img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
   }
 
   /** Project Section */
@@ -714,24 +724,22 @@ select:focus {
     padding: 10px 40px;
   }
 
-  /* NavbarLeft, NavbarRight Section */
-  .navbarLeft img,
-  .navbarRight img {
+  /* NavbarLeft  Section */
+  .navbarLeft img {
     width: 40px;
     height: 40px;
   }
 
-  .navbarLeft p,
-  .navbarRight p {
+  .navbarLeft p {
     font-size: 20px;
   }
 
-  /* NavbarMiddle Section */
-  .navbarMiddle {
+  /* NavbarRight Section */
+  .navbarRight {
     gap: 18px;
   }
 
-  .navbarMiddle h5 {
+  .navbarRight h5 {
     font-size: 14px;
   }
 
@@ -769,6 +777,11 @@ select:focus {
 
   .skill p {
     margin: 15px 80px 40px 80px;
+  }
+
+  .skillCard img {
+    width: 80px;
+    height: 80px;
   }
 
   /** Project Section */
@@ -860,10 +873,18 @@ select:focus {
     z-index: 20;
   }
 
-  .navbarSml #logo,
-  .navbarSml #navmenu {
+  .navbarSml #logo {
     width: 48px;
     height: 48px;
+    cursor: pointer;
+  }
+
+  .navbarSml #navmenu {
+    width: 26px;
+    height: 26px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--white-color);
     cursor: pointer;
   }
 
@@ -958,6 +979,11 @@ select:focus {
     margin: 10px 40px 20px 40px;
   }
 
+  .skillCard img {
+    width: 60px;
+    height: 60px;
+  }
+
   /** Project Section */
   .project {
     padding: 20px;
@@ -1037,10 +1063,14 @@ select:focus {
     padding: 10px;
   }
 
-  .navbarSml #logo,
-  .navbarSml #navmenu {
+  .navbarSml #logo {
     width: 36px;
     height: 36px;
+  }
+
+  .navbarSml #navmenu {
+    width: 18px;
+    height: 18px;
   }
 
   .navbarSmlContent.visible {
@@ -1073,6 +1103,11 @@ select:focus {
     text-align: justify;
     font-size: 12px;
     margin: 10px;
+  }
+
+  .skillCard img {
+    width: 40px;
+    height: 40px;
   }
 
   /** Project Section */

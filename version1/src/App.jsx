@@ -22,7 +22,7 @@ const App = () => {
     };
 
     return (
-        <div className="App">
+        <>
             <Header
                 scrollToHome={() => scrollToRef(homeRef)}
                 scrollToSkill={() => scrollToRef(skillRef)}
@@ -33,8 +33,8 @@ const App = () => {
             <SkillSection ref={skillRef} />
             <ProjectSection ref={projectRef} />
             <ContactSection ref={contactRef} />
-            <Footer />
-        </div>
+            <Footer scrollToHome={() => scrollToRef(homeRef)} />
+        </>
     )
 }
 
