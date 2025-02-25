@@ -1,40 +1,50 @@
-import { useRef } from 'react';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { HeroSection } from './sections/HeroSection';
-import { SkillSection } from './sections/SkillSection';
-import { ProjectSection } from './sections/ProjectSection';
-import { ContactSection } from './sections/ContactSection';
+import {
+    createBrowserRouter,
+    RouterProvider,
+    useRouteError,
+} from "react-router-dom"
+import { lazy, Suspense } from "react"
+import { Routes } from "./constants/Routes"
+import { Error } from "./pages/general/Error"
+import { Loading } from "./pages/general/Loading"
+import { OuterLayout } from "./layouts/OuterLayout"
+
+const Home = lazy(() => import("./pages/Home"))
+const Skills = lazy(() => import("./pages/Skills"))
+const Experience = lazy(() => import("./pages/Experience"))
+const Projects = lazy(() => import("./pages/Projects"))
+const ProjectInner = lazy(() => import("./pages/ProjectInner"))
+const Contact = lazy(() => import("./pages/Contact"))
+
+const ErrorBoundary = () => {
+    const errorData = useRouteError()
+    return (
+        <OuterLayout>
+            <Error errorData={errorData} />
+        </OuterLayout>
+    )
+}
+
+const routes = createBrowserRouter([
+    {
+        element: <OuterLayout />,
+        errorElement: <ErrorBoundary />,
+        children: [
+            { path: Routes.HOME.path, element: <Home /> },
+            { path: Routes.SKILLS.path, element: <Skills /> },
+            { path: Routes.EXPERIENCE.path, element: <Experience /> },
+            { path: Routes.PROJECTS.path, element: <Projects /> },
+            { path: Routes.PROJECT_INNER.path, element: <ProjectInner /> },
+            { path: Routes.CONTACT.path, element: <Contact /> },
+        ],
+    },
+])
 
 const App = () => {
-    const homeRef = useRef(null);
-    const skillRef = useRef(null);
-    const projectRef = useRef(null);
-    const contactRef = useRef(null);
-
-    const scrollToRef = (ref) => {
-        if (ref && ref.current) {
-            window.scrollTo({
-                top: ref.current.offsetTop,
-                behavior: 'smooth',
-            });
-        }
-    };
-
     return (
-        <>
-            <Header
-                scrollToHome={() => scrollToRef(homeRef)}
-                scrollToSkill={() => scrollToRef(skillRef)}
-                scrollToProject={() => scrollToRef(projectRef)}
-                scrollToContact={() => scrollToRef(contactRef)}
-            />
-            <HeroSection ref={homeRef} />
-            <SkillSection ref={skillRef} />
-            <ProjectSection ref={projectRef} />
-            <ContactSection ref={contactRef} />
-            <Footer scrollToHome={() => scrollToRef(homeRef)} />
-        </>
+        <Suspense fallback={<Loading />}>
+            <RouterProvider router={routes} />
+        </Suspense>
     )
 }
 

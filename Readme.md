@@ -1,13 +1,8 @@
-## Introduction
+# React + Vite
 
-Welcome to my personal portfolio website! This project showcases my important projects, skills, and experiences. Built using ReactJS, this website is designed to provide a comprehensive overview of my work and capabilities.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Link to visit the website: https://devattaulnoor.github.io/Portfolio
+Currently, two official plugins are available:
 
-## License
-
-This project is licensed under the DevAttaulNoor.
-
-## Contact
-
-If you have any questions or suggestions, feel free to contact the project maintainer at attaulnoor2001@gmail.com
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
